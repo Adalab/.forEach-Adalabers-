@@ -1,0 +1,65 @@
+.colors-palette {
+  display: flex;
+  margin-left: 10px;
+}
+
+
+.colors-palette__item {
+  height: 25px;
+  width: 30px;
+}
+
+//Palette Green
+
+.green1 {
+  background-color:$dark-green-blue;
+}
+
+.green2 {
+  background-color: $dirty-blue;
+}
+
+.green3 {
+  background-color: $hospital-green;
+}
+
+//Palette Red
+
+.red1 {
+  background-color: $dark-red;
+}
+
+;
+
+.red2 {
+  background-color: $rusty-red;
+}
+
+;
+
+.red3 {
+  background-color: $tomato;
+}
+
+;
+
+
+//Palette Blue
+
+.blue1 {
+  background-color: $dark-grey;
+}
+
+;
+
+.blue2 {
+  background-color: $pale-grey-two;
+}
+
+;
+
+.blue3 {
+  background-color: $light-grey-blue;
+}
+
+;

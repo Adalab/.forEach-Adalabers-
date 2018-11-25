@@ -1,8 +1,11 @@
-@import 'core/variables';
 
 *{
 	margin: 0;
 	box-sizing: border-box;
 }
 
+@import 'core/variables';
+@import 'components/typography';
+@import 'components/palettes';
 @import 'pages/cardPreview';
+@import 'pages/designCard';
