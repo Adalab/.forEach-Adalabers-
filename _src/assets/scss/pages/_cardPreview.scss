@@ -1,0 +1,213 @@
+.section__card{
+    background: linear-gradient(to bottom, $silver, $pale-grey);
+    min-height: 457px;
+    @media all and (min-width: 768px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+}
+.container__width{
+    margin-left: 45px;
+    margin-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    @media all and (min-width: 768px){
+        margin-left: 45px;
+        margin-right: 44px;
+    } 
+    @media all and (min-width: 1200px){
+        margin-left: auto;
+        margin-right: auto;
+    }  
+}
+
+.box__card{
+    min-height: 367px;
+    width: 240px;
+    background-color: $white;
+    border-radius: 2px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+   
+}
+
+.img{
+    background-image: url('../images/desiree.JPG');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 240px;
+}
+
+.button__reset{
+
+    font-size: 12px;
+    color: $gunmetal;
+    height: 30px;
+    width: 75px;
+    border-radius: 15px;
+    border: 1px white solid;
+    text-align: center;
+    margin-bottom: 20px;
+    .button{
+        background-color: inherit;
+        border:0;
+        font-family: $fontFamily-text;
+        text-transform: uppercase;
+        font-weight: $weightRegular;
+        padding: 0;
+        padding-left: 5px;
+        font-size: 12px;
+        line-height: 20px;
+        color: inherit;
+        padding-top: 5px;
+    }
+
+
+}
+
+.data{
+    font-family: $fontFamily-text;
+    line-height: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 14px;
+    position: relative;
+}
+
+.data__name{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: $weightBold;
+    color:$dark-green-blue;
+    padding-bottom: 5px;
+}
+.data__job{
+    font-size: 16px;
+    font-weight: $weightRegular;
+    color:$gunmetal;
+}
+
+.detail{
+    background-color: $hospital-green;
+    width: 5px;
+    height: 42px;
+    position: absolute;
+    left: 0;
+}
+
+.list__icon{
+    list-style: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    
+    .list__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        border: 2px $hospital-green solid;
+        height: 32px;
+        width: 32px;
+        margin-right: 10px;
+        .item__link{
+            text-decoration: none;
+            color:$dark-green-blue;
+            font-size: 18px;
+        }
+    }
+}
+.separation{
+    height: 2px;
+    width: 240px;
+    border-top: 2px $dirty-blue solid;
+    opacity: 0.2;
+}
+.list__skills{
+    list-style: none;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .list__item-skills{
+        display: inline-block;
+        text-transform: uppercase;
+        background-color: $dirty-blue;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: $weightRegular;
+        padding: 2px;
+        margin-bottom: 5px;
+        color: $white;
+        font-family: $fontFamily-text;
+    }
+} 
+//color design
+.box__card-red{
+    min-height: 367px;
+    width: 240px;
+    background-color: $white;
+    border-radius: 2px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    .data__name{
+        color: $dark-red;
+    }
+    .detail{
+        background-color: $tomato;
+    }
+    .list__item{
+        border: 2px $tomato solid;
+        .item__link{
+            color:$dark-red;
+        }
+    }
+    .list__item-skills{
+        background-color: $rusty-red;
+    }
+}
+
+.box__card-grey{
+    min-height: 367px;
+    width: 240px;
+    background-color: $white;
+    border-radius: 2px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    .data__name{
+        color: $dark-grey;
+    }
+    .detail{
+        background-color: $light-grey-blue;
+    }
+    .list__item{
+        border: 2px $light-grey-blue solid;
+        .item__link{
+            color:$dark-grey;
+        }
+    }
+    .list__item-skills{
+        background-color: $pale-grey-two;
+    }
+}
+//Font design
+.data-ubuntu{
+    font-family: $fontFamily-primary;   
+    line-height: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 14px;
+    position: relative; 
+}
+
+.data-mont{
+    font-family: $fontFamily-tertiary;
+    line-height: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 14px;
+    position: relative;
+}
