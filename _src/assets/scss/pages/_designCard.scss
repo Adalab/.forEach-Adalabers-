@@ -1,0 +1,130 @@
+//Typography
+
+.title-dropdown__title-design {
+  font-family: $fontFamily-text;
+  font-weight: $weightSemiBold;
+  font-size: 18px;
+  color: $gunmetal;
+  text-transform: uppercase;
+}
+
+.title-colors,
+.title-fonts {
+  font-family: $fontFamily-text;
+  font-weight: $weightRegular;
+  font-size: 14px;
+  color: $gunmetal;
+  text-transform: uppercase;
+  margin-left: 39px;
+}
+
+label[for=font-Ubuntu],
+label[for=font-ComicSans],
+label[for=font-Monserrat] {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.font-Ubuntu {
+  display: inline;
+  font-family: $fontFamily-text;
+  font-weight: $weightSemiBold;
+  font-size: 16px;
+  color: $gunmetal;
+  margin-left: 10px;
+}
+
+.font-ComicSans {
+  display: inline;
+  font-family: $fontFamily-quaternary;
+  font-size: 16px;
+  color: $gunmetal;
+  margin-left: 10px;
+}
+
+.font-Monserrat {
+  display: inline;
+  font-family: $fontFamily-Merri;
+  font-weight: $weightRegular;
+  font-size: 16px;
+  color: $gunmetal;
+  margin-left: 10px;
+}
+
+//end typography
+
+.design-card {
+  margin: 27px 20px 0 20px;
+  border-bottom: solid 1px $white-two;
+}
+
+.title-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.title-dropdown__icontitle {
+  display: flex;
+  align-items: center;
+}
+
+.title-dropdown__title-design {
+  margin-left: 10px;
+}
+
+.palette-green {
+  display: flex;
+  justify-content: space-between;
+}
+
+label[for=palette-green],
+label[for=palette-red],
+label[for=palette-blue] {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.design-card__colors {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 13px 0;
+}
+
+.design-card__fonts {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.design-Card__colors__select-font {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.design-card__colors__select-palette,
+.design-Card__colors__select-font {
+  width: 117px;
+
+}
+
+// form radio grom input
+.radio {
+  height: 17px;
+  width: 17px;
+}
+
+//icon
+.title-dropdown__icon-design {
+  color: $dull-orange;
+  font-size: 18px;
+}
+
+.fa-chevron-down {
+  font-size: 18px;
+  color: $gunmetal;
+}
