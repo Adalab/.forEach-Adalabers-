@@ -1,7 +1,15 @@
+.container-title {
+  display: flex;
+  margin: 13px 23px 0 23px;
+}
 .title-dropdown__title-share {
     font-family: $fontFamily-text;
     font-weight: $weightSemiBold;
     font-size: 18px;
     color: $gunmetal;
     text-transform: uppercase;
+  }
+  .title-dropdown__icon-share {
+    color: $dull-orange;
+    font-size: 18px;
   }
