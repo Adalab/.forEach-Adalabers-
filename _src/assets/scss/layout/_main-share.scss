@@ -20,11 +20,15 @@
   }
   .button-create {
     font-family: $fontFamily-text;
+    text-transform: uppercase;
     font-size: 18px;
     font-weight: $weightSemiBold;
     color: $white;
     background-color: $dull-orange;
-    width: 199px;
-    height: 50px;
     border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    padding: 13px 18px;
+  }
+  .fa-address-card {
+    padding-right: 10px;
   }
