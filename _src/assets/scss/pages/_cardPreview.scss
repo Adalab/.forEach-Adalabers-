@@ -1,5 +1,5 @@
 .section__card{
-    background: linear-gradient(to bottom, $silver, $pale-grey);
+    background-image: url('../images/leaves.png');
     min-height: 457px;
     @media all and (min-width: 768px){
         display: flex;
@@ -32,7 +32,7 @@
 }
 
 .img{
-    background-image: url('../images/desiree.JPG');
+    background-image: url('../images/silueta.jpg');
     background-position: center;
     background-size: cover;
     height: 200px;
