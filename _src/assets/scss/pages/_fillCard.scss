@@ -1,0 +1,35 @@
+.fill-card {
+    margin: 27px 20px 0 20px;
+  border-bottom: solid 1px $white-two;
+}
+.title-dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+.title-dropdown__title-fill {
+    font-family: $fontFamily-text;
+    font-weight: $weightSemiBold;
+    font-size: 18px;
+    color: $gunmetal;
+    text-transform: uppercase;
+    margin-left: 10px;
+  }
+  .title-dropdown__icontitle {
+    display: flex;
+    align-items: center;
+  }
+  .fa-keyboard {
+      font-size: 18px;
+      color: $dull-orange;
+  }
+
+  //FORM
+  .form {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      font-family: $fontFamily-text;
+      color: $dark-green-blue;
+  }
