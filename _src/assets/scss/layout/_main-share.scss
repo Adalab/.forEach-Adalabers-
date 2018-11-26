@@ -1,6 +1,10 @@
 .container-title {
   display: flex;
   margin: 13px 23px 0 23px;
+  justify-content: space-between;
+}
+.container-icon-title {
+  display: flex;
 }
 .title-dropdown__title-share {
     font-family: $fontFamily-text;
@@ -8,8 +12,19 @@
     font-size: 18px;
     color: $gunmetal;
     text-transform: uppercase;
+    margin-left: 10px;
   }
   .title-dropdown__icon-share {
     color: $dull-orange;
     font-size: 18px;
+  }
+  .button-create {
+    font-family: $fontFamily-text;
+    font-size: 18px;
+    font-weight: $weightSemiBold;
+    color: $white;
+    background-color: $dull-orange;
+    width: 199px;
+    height: 50px;
+    border-radius: 12px;
   }
