@@ -191,6 +191,29 @@
         background-color: $pale-grey-two;
     }
 }
+
+.box__card-purple{
+    min-height: 367px;
+    width: 240px;
+    background-color: $white;
+    border-radius: 2px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    .data__name{
+        color: $dark-purple;
+    }
+    .detail{
+        background-color: $light-purple;
+    }
+    .list__item{
+        border: 2px $light-purple solid;
+        .item__link{
+            color:$dark-purple;
+        }
+    }
+    .list__item-skills{
+        background-color: $mediun-purple;
+    }
+}
 //Font design
 .data-ubuntu{
     font-family: $fontFamily-primary;   
