@@ -32,7 +32,7 @@
 }
 
 .img{
-    background-image: url('../images/desiree.JPG');
+    background-image: url('../images/person.png');
     background-position: center;
     background-size: cover;
     height: 200px;
@@ -214,6 +214,29 @@
         background-color: $mediun-purple;
     }
 }
+
+.box__card-orange{
+    min-height: 367px;
+    width: 240px;
+    background-color: $white;
+    border-radius: 2px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    .data__name{
+        color: $tomato;
+    }
+    .detail{
+        background-color: $light-orange;
+    }
+    .list__item{
+        border: 2px $light-orange solid;
+        .item__link{
+            color:$tomato;
+        }
+    }
+    .list__item-skills{
+        background-color: $dark-orange;
+    }
+}
 //Font design
 .data-ubuntu{
     font-family: $fontFamily-primary;   
@@ -227,6 +250,26 @@
 
 .data-mont{
     font-family: $fontFamily-tertiary;
+    line-height: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 14px;
+    position: relative;
+}
+
+.data-hand{
+    font-family: $fontFamily-Hand;
+    line-height: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 14px;
+    position: relative;
+}
+
+.data-libre{
+    font-family: $fontFamily-libre;
     line-height: 20px;
     padding-top: 20px;
     padding-bottom: 10px;
