@@ -18,9 +18,7 @@
   margin-left: 39px;
 }
 
-label[for=font-Ubuntu],
-label[for=font-ComicSans],
-label[for=font-Monserrat] {
+.font {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
@@ -80,9 +78,7 @@ label[for=font-Monserrat] {
   justify-content: space-between;
 }
 
-label[for=palette-green],
-label[for=palette-red],
-label[for=palette-blue] {
+.palette {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
