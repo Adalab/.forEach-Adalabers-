@@ -3,5 +3,12 @@
 	margin: 0;
 	padding: 0;
 }
+
+@import 'core/variables';
+@import 'components/palettes';
+@import 'components/typography';
+@import 'pages/cardPreview';
+@import 'pages/designCard';
 @import 'layout/header';
 @import 'layout/main_firstpage';
+
