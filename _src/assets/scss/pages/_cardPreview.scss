@@ -67,7 +67,7 @@
 }
 
 .data{
-    font-family: $fontFamily-quaternary;
+    font-family: $fontFamily-text;
     line-height: 20px;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -238,6 +238,15 @@
     }
 }
 //Font design
+.data-quaternary{
+    font-family: $fontFamily-quaternary;   
+    line-height: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 14px;
+    position: relative; 
+}
 .data-ubuntu{
     font-family: $fontFamily-primary;   
     line-height: 20px;
