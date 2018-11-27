@@ -66,7 +66,7 @@
 
 }
 
-.data{
+.userInfo{
     font-family: $fontFamily-text;
     line-height: 20px;
     padding-top: 20px;
@@ -76,14 +76,14 @@
     position: relative;
 }
 
-.data__name{
+.userInfo__name{
     text-transform: capitalize;
     font-size: 18px;
     font-weight: $weightBold;
     color:$dark-green-blue;
     padding-bottom: 5px;
 }
-.data__job{
+.userInfo__job{
     font-size: 16px;
     font-weight: $weightRegular;
     color:$gunmetal;
@@ -146,13 +146,9 @@
     }
 } 
 //color design
-.box__card-red{
-    min-height: 367px;
-    width: 240px;
-    background-color: $white;
-    border-radius: 2px;
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-    .data__name{
+.box__card--red{
+
+    .userInfo__name{
         color: $dark-red;
     }
     .detail{
@@ -169,13 +165,9 @@
     }
 }
 
-.box__card-grey{
-    min-height: 367px;
-    width: 240px;
-    background-color: $white;
-    border-radius: 2px;
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-    .data__name{
+.box__card--grey{
+   
+    .userInfo__name{
         color: $dark-grey;
     }
     .detail{
@@ -192,13 +184,9 @@
     }
 }
 
-.box__card-purple{
-    min-height: 367px;
-    width: 240px;
-    background-color: $white;
-    border-radius: 2px;
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-    .data__name{
+.box__card--purple{
+    
+    .userInfo__name{
         color: $dark-purple;
     }
     .detail{
@@ -215,13 +203,9 @@
     }
 }
 
-.box__card-orange{
-    min-height: 367px;
-    width: 240px;
-    background-color: $white;
-    border-radius: 2px;
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-    .data__name{
+.box__card--orange{
+    
+    .userInfo__name{
         color: $tomato;
     }
     .detail{
@@ -238,51 +222,21 @@
     }
 }
 //Font design
-.data-quaternary{
+.userInfo--quaternary{
     font-family: $fontFamily-quaternary;   
-    line-height: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 14px;
-    position: relative; 
 }
-.data-ubuntu{
+.userInfo--ubuntu{
     font-family: $fontFamily-primary;   
-    line-height: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 14px;
-    position: relative; 
 }
 
-.data-mont{
+.userInfo--mont{
     font-family: $fontFamily-tertiary;
-    line-height: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 14px;
-    position: relative;
 }
 
-.data-hand{
+.userInfo--hand{
     font-family: $fontFamily-Hand;
-    line-height: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 14px;
-    position: relative;
 }
 
-.data-libre{
+.userInfo-libre{
     font-family: $fontFamily-libre;
-    line-height: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 14px;
-    position: relative;
 }
