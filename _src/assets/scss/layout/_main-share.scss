@@ -62,14 +62,20 @@
     font-family: $fontFamily-text;
     font-weight: $weightSemiBold;
     border-bottom: solid 1px $white-two;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .text-hide-section {
     color: $gunmetal;
     font-size: 18px;
+    margin-top: 20px;
   }
   .link-profile-card {
     color: $dull-orange;
     font-size: 12px;
+    margin-top: 5px;
   }
   .share-twitter {
     background-color: $blue-azure;
@@ -80,6 +86,8 @@
     align-items: center;
     padding: 5px 9px;
     color: $white;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
   .share-twitter-text {
     font-size: 14px;
