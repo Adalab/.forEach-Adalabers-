@@ -35,11 +35,45 @@
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 13px 18px;
     margin: 30px auto;
-    width: 200px;
-    height: 50px;
-
   }
   .fa-address-card {
     padding-right: 10px;
+    font-size: 20px;
+  }
+  .button-create-clicked {
+    font-family: $fontFamily-text;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: $weightSemiBold;
+    color: $white;
+    background-color: $grey-clicked;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 18px;
+    margin: 30px auto;
+  }
+  .container-hide-section {
+    font-family: $fontFamily-text;
+    font-weight: $weightSemiBold;
+  }
+  .text-hide-section {
+    color: $gunmetal;
+    font-size: 18px;
+  }
+  .link-profile-card {
+    color: $dull-orange;
+    font-size: 12px;
+  }
+  .share-twitter {
+    
+  }
+  .share-twitter-text {
+    font-size: 14px;
+    font-weight: $weightRegular;
   }
