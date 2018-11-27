@@ -72,6 +72,10 @@
   border: 1px solid $hospital-green;
 }
 
+.container-skills {
+  display: flex;
+  flex-direction: column;
+}
 .text-skills {
   margin-top: 40px;
 }
