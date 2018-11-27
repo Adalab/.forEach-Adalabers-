@@ -61,11 +61,12 @@
   .container-hide-section {
     font-family: $fontFamily-text;
     font-weight: $weightSemiBold;
-    border-bottom: solid 1px $white-two;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-bottom: solid 1px $white-two;
+    margin: 0 20px;
   }
   .text-hide-section {
     color: $gunmetal;
@@ -82,12 +83,10 @@
     border-radius: 3px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 9px;
     color: $white;
     margin-top: 10px;
     margin-bottom: 30px;
+    padding: 5px 10px;
   }
   .share-twitter-text {
     font-size: 14px;
