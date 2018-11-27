@@ -1,5 +1,5 @@
 .section__card{
-    background: linear-gradient(to bottom, $silver, $pale-grey);
+    background-image: url('../images/leaves.png');
     min-height: 457px;
     @media all and (min-width: 768px){
         display: flex;
@@ -32,7 +32,7 @@
 }
 
 .img{
-    background-image: url('../images/desiree.JPG');
+    background-image: url('../images/silueta.jpg');
     background-position: center;
     background-size: cover;
     height: 200px;
@@ -66,8 +66,8 @@
 
 }
 
-.data{
-    font-family: $fontFamily-quaternary;
+.userInfo{
+    font-family: $fontFamily-text;
     line-height: 20px;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -76,14 +76,14 @@
     position: relative;
 }
 
-.data__name{
+.userInfo__name{
     text-transform: capitalize;
     font-size: 18px;
     font-weight: $weightBold;
     color:$dark-green-blue;
     padding-bottom: 5px;
 }
-.data__job{
+.userInfo__job{
     font-size: 16px;
     font-weight: $weightRegular;
     color:$gunmetal;
@@ -146,13 +146,9 @@
     }
 } 
 //color design
-.box__card-red{
-    min-height: 367px;
-    width: 240px;
-    background-color: $white;
-    border-radius: 2px;
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-    .data__name{
+.box__card--red{
+
+    .userInfo__name{
         color: $dark-red;
     }
     .detail{
@@ -169,13 +165,9 @@
     }
 }
 
-.box__card-grey{
-    min-height: 367px;
-    width: 240px;
-    background-color: $white;
-    border-radius: 2px;
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-    .data__name{
+.box__card--grey{
+   
+    .userInfo__name{
         color: $dark-grey;
     }
     .detail{
@@ -191,23 +183,60 @@
         background-color: $pale-grey-two;
     }
 }
-//Font design
-.data-ubuntu{
-    font-family: $fontFamily-primary;   
-    line-height: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 14px;
-    position: relative; 
+
+.box__card--purple{
+    
+    .userInfo__name{
+        color: $dark-purple;
+    }
+    .detail{
+        background-color: $light-purple;
+    }
+    .list__item{
+        border: 2px $light-purple solid;
+        .item__link{
+            color:$dark-purple;
+        }
+    }
+    .list__item-skills{
+        background-color: $mediun-purple;
+    }
 }
 
-.data-mont{
+.box__card--orange{
+    
+    .userInfo__name{
+        color: $tomato;
+    }
+    .detail{
+        background-color: $light-orange;
+    }
+    .list__item{
+        border: 2px $light-orange solid;
+        .item__link{
+            color:$tomato;
+        }
+    }
+    .list__item-skills{
+        background-color: $dark-orange;
+    }
+}
+//Font design
+.userInfo--quaternary{
+    font-family: $fontFamily-quaternary;   
+}
+.userInfo--ubuntu{
+    font-family: $fontFamily-primary;   
+}
+
+.userInfo--mont{
     font-family: $fontFamily-tertiary;
-    line-height: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 14px;
-    position: relative;
+}
+
+.userInfo--hand{
+    font-family: $fontFamily-Hand;
+}
+
+.userInfo-libre{
+    font-family: $fontFamily-libre;
 }
