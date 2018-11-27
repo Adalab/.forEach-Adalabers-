@@ -33,8 +33,11 @@
     background-color: $dull-orange;
     border-radius: 12px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-    padding: 13px 18px;
-    margin: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    width: 200px;
+    height: 50px;
 
   }
   .fa-address-card {
