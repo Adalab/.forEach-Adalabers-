@@ -1,11 +1,7 @@
-
-*{
-	margin: 0;
+* {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-
-@import 'core/variables';
-@import 'components/typography';
-@import 'components/palettes';
-@import 'pages/cardPreview';
-@import 'pages/designCard';
+@import 'layout/header';
+@import 'layout/main_firstpage';
