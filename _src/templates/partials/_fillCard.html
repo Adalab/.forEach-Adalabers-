@@ -1,0 +1,76 @@
+<section class="fill-card">
+  <div class="title-dropdown-fill">
+    <div class="title-dropdown__icontitle">
+      <i class="far fa-keyboard"></i>
+      <h2 class="title-dropdown__title-fill">Rellena</h2>
+    </div>
+    <div class="title-dropdown__arrow arrowFill">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </div>
+
+  <!--FORM-->
+
+  <form action="/signup" method="post" class="form">
+    <label for="name" class="item-label">Nombre completo</label>
+    <input placeholder="Ej: Sally Jill" id="name" type="text" name="name" class="item-input" required>
+    <label for="job" class="item-label">Profesión</label>
+    <input placeholder="Ej: Front-end unicorn" id="job" type="text" name="job" class="item-input" required>
+    <p class="item-label">Imágen de perfil</p>
+    <div class="container-image">
+      <a href="" class="image-link">Añadir imagen</a>
+      <div class="image-preview"></div>
+    </div>
+    <label for="email" class="item-label">Email</label>
+    <input placeholder="Ej: sally-hill@gmail.com" id="email" type="email" name="email" class="item-input" required>
+    <label for="phone" class="item-label">Teléfono</label>
+    <input placeholder="Ej: 555·55·55·55" pattern=[0-9]{9} type="tel" id="phone" name="phone" class="item-input" required>
+    <label for="Linkedin" class="item-label">Linkedin</label>
+    <input placeholder="Ej: linkedin.com/in/sally.hill" type="text" name="linkedin" id="linkedin" class="item-input" required>
+    <label for="GitHub" class="item-label">GitHub</label>
+    <input placeholder="Ej: @sally-hill" type="text" name="github" id="github" class="item-input" required>
+    <div class="container-skills">
+    <p class="text-skills">Habilidades (máximo 3)</p>
+
+      <label for="HTML" class="checkbox-label">
+        <input id="HTML" type="checkbox" value="chooseskill" name="skills" class="checkbox-input">
+        <p>HTML</p> 
+      </label>
+    
+      <label for="CSS" class="checkbox-label">
+        <input id="CSS" type="checkbox" value="chooseskill" name="skills" class="checkbox-input">
+        <p>CSS</p> 
+      </label>
+  
+      <label for="Gulp" class="checkbox-label">
+        <input id="gulp" type="checkbox" value="chooseskill" name="skills" class="checkbox-input">
+        <p>Gulp</p>
+      </label>
+    
+      <label for="Git" class="checkbox-label"> 
+        <input id="git" type="checkbox" value="chooseskill" name="skills" class="checkbox-input">
+        <p>Git</p>
+      </label>
+    
+      <label for="Sass" class="checkbox-label">
+        <input id="sass" type="checkbox" value="chooseskill" name="skilloptions" class="checkbox-input">
+        <p>Sass</p>
+      </label>
+    
+      <label for="JavaScript" class="checkbox-label">
+        <input id="javascript" type="checkbox" value="chooseskill" name="skilloptions" class="checkbox-input">
+        <p>JavaScript</p>
+      </label>
+    
+      <label for="AJAX" class="checkbox-label">
+        <input id="ajax" type="checkbox" value="chooseskill" name="skilloptions" class="checkbox-input">
+        <p>AJAX</p>
+      </label>
+    
+      <label for="React" class="checkbox-label">
+        <input id="react" type="checkbox" value="chooseskill" name="skilloptions" class="checkbox-input">
+        <p>React</p>
+      </label>
+    </div>
+  </form>
+</section>
