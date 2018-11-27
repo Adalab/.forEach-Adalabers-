@@ -61,6 +61,7 @@
   .container-hide-section {
     font-family: $fontFamily-text;
     font-weight: $weightSemiBold;
+    border-bottom: solid 1px $white-two;
   }
   .text-hide-section {
     color: $gunmetal;
@@ -71,9 +72,20 @@
     font-size: 12px;
   }
   .share-twitter {
-    
+    background-color: $blue-azure;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 9px;
+    color: $white;
   }
   .share-twitter-text {
     font-size: 14px;
     font-weight: $weightRegular;
+  }
+  .fa-twitter {
+    padding-right: 6px;
+    font-size: 18px;
   }
