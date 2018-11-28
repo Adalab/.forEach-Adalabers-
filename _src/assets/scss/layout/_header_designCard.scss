@@ -1,10 +1,9 @@
 .header__container-designCard{
     width: 100%;
     background-color: $white;
-}
-.header__position{
-    width: 100vw;
-    padding-top: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header__gonext{
     display: block;
