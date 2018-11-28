@@ -1,11 +1,12 @@
 .header__container-designCard{
     width: 100%;
     background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
 }
-.header__position{
-    width: 100vw;
-    padding-top: 94px;
-}
+
 .header__gonext{
     display: block;
     margin: auto;
