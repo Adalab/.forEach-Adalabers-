@@ -10,12 +10,19 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
         integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600|Ubuntu:400,700|Merriweather"
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600|Ubuntu:400,700|Merriweather|Indie+Flower:400|Libre+Baskerville:400,700"
         rel="stylesheet">
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     
     <body>
+        <header class="header__container">
+            <div class="header__position"> <a class="header__gonext" href="http://">
+            <img class="header__logo" src="assets/images/descarga.svg" alt="logo awesome profile-cards">
+        </a>
+
+            </div>
+        </header>
         <main>
             <section class="section__card">
                 <div class="container__width">
@@ -25,16 +32,14 @@
                         value="Reset">
                     </div>
                     <div class="box__card">
-                        <div class="data">
+                        <div class="userInfo">
                             <div class="detail"></div>
-                             <h2 class="data__name">Nombre apellido</h2>
+                             <h2 class="userInfo__name">Nombre apellido</h2>
 
-                             <h3 class="data__job">Front-end developer</h3>
+                             <h3 class="userInfo__job">Front-end developer</h3>
 
                         </div>
                         <div class="img"></div>
-                        <!-- <img class="img" src="assets/images/desiree.JPG" alt="Personal
-                        photo"> -->
                         <ul class="list__icon">
                             <li class="list__item"> <a class="item__link" href="">
                         <i class="fas fa-mobile-alt"></i>
@@ -85,58 +90,189 @@
                 <div class="design-card__colors">
                      <h3 class="title-colors">Colores</h3>
 
-                    <div class="design-card__colors__select-palette">
-                        <label for="palette-green">
-                            <input class="radio" id="palette-green" type="radio" value="palette-green"
-                            name="">
-                            <div class="colors-palette">
-                                <div class="colors-palette__item green1"></div>
-                                <div class="colors-palette__item green2"></div>
-                                <div class="colors-palette__item green3"></div>
-                            </div>
-                        </label>
-                        <label for="palette-red">
-                            <input class="radio" id="palette-red" type="radio" value="palette-red"
-                            name="">
-                            <div class="colors-palette">
-                                <div class="colors-palette__item red1"></div>
-                                <div class="colors-palette__item red2"></div>
-                                <div class="colors-palette__item red3"></div>
-                            </div>
-                        </label>
-                        <label for="palette-blue">
-                            <input class="radio" id="palette-blue" type="radio" value="palette-blue"
-                            name="">
-                            <div class="colors-palette">
-                                <div class="colors-palette__item blue1"></div>
-                                <div class="colors-palette__item blue2"></div>
-                                <div class="colors-palette__item blue3"></div>
-                            </div>
-                        </label>
-                    </div>
+                    <ul class="design-card__colors__select-palette">
+                        <li>
+                            <label for="palette-green" class="palette">
+                                <input class="radio" id="palette-green" type="radio" value="palette-green"
+                                name="">
+                                <div class="colors-palette">
+                                    <div class="colors-palette__item green1"></div>
+                                    <div class="colors-palette__item green2"></div>
+                                    <div class="colors-palette__item green3"></div>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="palette-red" class="palette">
+                                <input class="radio" id="palette-red" type="radio" value="palette-red"
+                                name="">
+                                <div class="colors-palette">
+                                    <div class="colors-palette__item red1"></div>
+                                    <div class="colors-palette__item red2"></div>
+                                    <div class="colors-palette__item red3"></div>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="palette-blue" class="palette">
+                                <input class="radio" id="palette-blue" type="radio" value="palette-blue"
+                                name="">
+                                <div class="colors-palette">
+                                    <div class="colors-palette__item blue1"></div>
+                                    <div class="colors-palette__item blue2"></div>
+                                    <div class="colors-palette__item blue3"></div>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="palette-purple" class="palette">
+                                <input class="radio" id="palette-purple" type="radio" value="palette-purple"
+                                name="">
+                                <div class="colors-palette">
+                                    <div class="colors-palette__item purple1"></div>
+                                    <div class="colors-palette__item purple2"></div>
+                                    <div class="colors-palette__item purple3"></div>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="palette-orange" class="palette">
+                                <input class="radio" id="palette-orange" type="radio" value="palette-orange"
+                                name="">
+                                <div class="colors-palette">
+                                    <div class="colors-palette__item orange1"></div>
+                                    <div class="colors-palette__item orange2"></div>
+                                    <div class="colors-palette__item orange3"></div>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
                 </div>
                 <div class="design-card__fonts">
                      <h3 class="title-fonts">Fuentes</h3>
 
-                    <div class="design-Card__colors__select-font">
-                        <label for="font-Ubuntu">
-                            <input class="radio" id="font-Ubuntu" type="radio" value="Ubuntu" name="">
-                            <p class="font-Ubuntu">Ubuntu</p>
-                        </label>
-                        <label for="font-ComicSans">
-                            <input class="radio" id="font-ComicSans" type="radio" value="ComicSans"
-                            name="">
-                            <p class="font-ComicSans">Comic Sans</p>
-                        </label>
-                        <label for="font-Montserrat">
-                            <input class="radio" id="font-Montserrat" type="radio" value="Montserrat"
-                            name="">
-                            <p class="font-Monserrat">Monserrat</p>
-                        </label>
-                    </div>
+                    <ul class="design-Card__colors__select-font">
+                        <li>
+                            <label for="font-Ubuntu" class="font">
+                                <input class="radio" id="font-Ubuntu" type="radio" value="Ubuntu" name="">
+                                <p class="font-Ubuntu">Ubuntu</p>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="font-ComicSans" class="font">
+                                <input class="radio" id="font-ComicSans" type="radio" value="ComicSans"
+                                name="">
+                                <p class="font-ComicSans">Comic Sans</p>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="font-Montserrat" class="font">
+                                <input class="radio" id="font-Montserrat" type="radio" value="Montserrat"
+                                name="">
+                                <p class="font-Monserrat">Monserrat</p>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="font-Indie" class="font">
+                                <input class="radio" id="font-Indie" type="radio" value="Indie" name="">
+                                <p class="font-Indie">Indie</p>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="font-Baskerville" class="font">
+                                <input class="radio" id="font-Baskerville" type="radio" value="Baskerville"
+                                name="">
+                                <p class="font-Baskerville">Baskerville</p>
+                            </label>
+                        </li>
+                    </ul>
                 </div>
             </section>
+            <section class="fill-card">
+                <div class="title-dropdown-fill">
+                    <div class="title-dropdown__icontitle"> <i class="far fa-keyboard"></i>
+
+                         <h2 class="title-dropdown__title-fill">Rellena</h2>
+
+                    </div>
+                    <div class="title-dropdown__arrow arrowFill"> <i class="fas fa-chevron-down"></i>
+
+                    </div>
+                </div>
+                <!--FORM-->
+                <form action="/signup" method="post" class="form">
+                    <label for="name" class="item-label">Nombre completo</label>
+                    <input placeholder="Ej: Sally Jill" id="name" type="text"
+                    name="name" class="item-input" required>
+                    <label for="job" class="item-label">Profesión</label>
+                    <input placeholder="Ej: Front-end unicorn" id="job" type="text"
+                    name="job" class="item-input" required>
+                    <p class="item-label">Imágen de perfil</p>
+                    <div class="container-image"> <a href="" class="image-link">Añadir imagen</a>
+
+                        <div class="image-preview"></div>
+                    </div>
+                    <label for="email" class="item-label">Email</label>
+                    <input placeholder="Ej: sally-hill@gmail.com" id="email"
+                    type="email" name="email" class="item-input" required>
+                    <label for="phone" class="item-label">Teléfono</label>
+                    <input placeholder="Ej: 555·55·55·55" pattern=[0-9]{9}
+                    type="tel" id="phone" name="phone" class="item-input" required>
+                    <label for="Linkedin" class="item-label">Linkedin</label>
+                    <input placeholder="Ej: linkedin.com/in/sally.hill" type="text"
+                    name="linkedin" id="linkedin" class="item-input" required>
+                    <label for="GitHub" class="item-label">GitHub</label>
+                    <input placeholder="Ej: @sally-hill" type="text" name="github"
+                    id="github" class="item-input" required>
+                    <div class="container-skills">
+                        <p class="text-skills">Habilidades (máximo 3)</p>
+                        <label for="HTML" class="checkbox-label">
+                            <input id="HTML" type="checkbox" value="chooseskill" name="skills" class="checkbox-input">
+                            <p>HTML</p>
+                        </label>
+                        <label for="CSS" class="checkbox-label">
+                            <input id="CSS" type="checkbox" value="chooseskill" name="skills" class="checkbox-input">
+                            <p>CSS</p>
+                        </label>
+                        <label for="Sass" class="checkbox-label">
+                            <input id="sass" type="checkbox" value="chooseskill" name="skilloptions"
+                            class="checkbox-input">
+                            <p>Sass</p>
+                        </label>
+                        <label for="Git" class="checkbox-label">
+                            <input id="git" type="checkbox" value="chooseskill" name="skills" class="checkbox-input">
+                            <p>Git</p>
+                        </label>
+                        <label for="Gulp" class="checkbox-label">
+                            <input id="gulp" type="checkbox" value="chooseskill" name="skills" class="checkbox-input">
+                            <p>Gulp</p>
+                        </label>
+                        <label for="JavaScript" class="checkbox-label">
+                            <input id="javascript" type="checkbox" value="chooseskill" name="skilloptions"
+                            class="checkbox-input">
+                            <p>JavaScript</p>
+                        </label>
+                        <label for="AJAX" class="checkbox-label">
+                            <input id="ajax" type="checkbox" value="chooseskill" name="skilloptions"
+                            class="checkbox-input">
+                            <p>AJAX</p>
+                        </label>
+                        <label for="React" class="checkbox-label">
+                            <input id="react" type="checkbox" value="chooseskill" name="skilloptions"
+                            class="checkbox-input">
+                            <p>React</p>
+                        </label>
+                    </div>
+                </form>
+            </section>
         </main>
+        <section class="footer__section">
+            <p class="footer__text-reg">Awesome profile-cards &copy;2018</p> <a class="footer__conection" href="http://">
+        <div class="footer__conection-logo">
+        </div>
+    </a>
+
+        </section>
         <script type="text/javascript" src="assets/js/main.min.js"></script>
     </body>
 
