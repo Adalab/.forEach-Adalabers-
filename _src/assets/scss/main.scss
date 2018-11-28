@@ -8,11 +8,14 @@
 @import 'core/mixins';
 @import 'components/palettes';
 @import 'components/typography';
+
 @import 'pages/cardPreview';
 @import 'pages/designCard';
 @import 'pages/fillCard';
-@import 'layout/header_firstpage';
-@import 'layout/main_firstpage';
+
+@import 'layout/headerFirstpage';
+@import 'layout/headerDesignCard';
+@import 'layout/mainFirstpage';
 @import 'layout/footer';
-@import 'layout/main-share';
+@import 'layout/mainShare';
 @import 'layout/responsive';
