@@ -50,6 +50,24 @@
   margin-left: 10px;
 }
 
+.font-Indie{
+  display: inline;
+  font-family: $fontFamily-Hand;
+  font-weight: $weightRegular;
+  font-size: 16px;
+  color: $gunmetal;
+  margin-left: 10px;
+}
+
+.font-Baskerville{
+  display: inline;
+  font-family: $fontFamily-libre;
+  font-weight: $weightRegular;
+  font-size: 16px;
+  color: $gunmetal;
+  margin-left: 10px;
+}
+
 //end typography
 
 .design-card {
