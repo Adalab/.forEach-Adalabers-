@@ -18,6 +18,11 @@
   margin-left: 39px;
 }
 
+.design-card__colors__select-palette,
+.design-Card__colors__select-font{
+  list-style: none;
+}
+
 .font {
   display: flex;
   align-items: center;
@@ -44,6 +49,24 @@
 .font-Monserrat {
   display: inline;
   font-family: $fontFamily-Merri;
+  font-weight: $weightRegular;
+  font-size: 16px;
+  color: $gunmetal;
+  margin-left: 10px;
+}
+
+.font-Indie{
+  display: inline;
+  font-family: $fontFamily-Hand;
+  font-weight: $weightRegular;
+  font-size: 16px;
+  color: $gunmetal;
+  margin-left: 10px;
+}
+
+.font-Baskerville{
+  display: inline;
+  font-family: $fontFamily-libre;
   font-weight: $weightRegular;
   font-size: 16px;
   color: $gunmetal;
