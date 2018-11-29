@@ -3,7 +3,7 @@
     width: 100%;
     max-width: 100vw;
 }
-.size__container{
+.size__container-Firstpage{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -67,4 +67,30 @@
     padding-right: 30px;
     border-radius: 30px;
     margin-bottom: 30px; 
+}
+@media all and (min-width:768px) {
+    .size__container-Firstpage{
+        padding-bottom: 60px;
+    }
+    .start__tittle{
+        font-size: 24px;
+    }
+    .start__slogan{
+        font-size: 16px;
+        padding-bottom: 21px;
+        max-width: 325px;
+    }
+    .start__options{
+        width: 325px;
+        margin-bottom: 180px;
+    }
+    .option__position{
+        font-size: 16px;
+    }
+    .paint__icon{
+        font-size: 28px;
+    }
+    .start__buton-continue{
+        margin-bottom: 0; 
+    }
 }
