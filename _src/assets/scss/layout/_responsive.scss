@@ -1,0 +1,39 @@
+.created__target {
+    background: linear-gradient(to bottom, $white-three, $white);
+}
+
+@media all and (min-width:768px) {
+    .created__target {
+        display: grid;
+        grid-template-columns: 200px 200px 1fr 1fr 1fr;
+        padding: 20px 40px;
+        background: linear-gradient(to bottom, $white-three, $white);
+        
+    }
+    .section__card {
+        grid-column: 3/6;
+        border-radius: 6px;
+        margin-left: 30px;
+
+    }
+    .tunning__responsive {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    .title-colors,
+    .title-fonts {
+        margin: 0;
+    }
+    .footer__section{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0;
+        .footer__text-reg{
+            margin-left: 40px;
+        }
+        .footer__conection{
+            margin-right: 40px;
+        }
+    }
+}
