@@ -1,0 +1,1 @@
+"use strict";const inputName=document.querySelector("#name"),nameCard=document.querySelector(".userInfo__name");function handlerInput(){let e=inputName.value;nameCard.innerHTML=e}inputName.addEventListener("keypress",handlerInput),inputName.addEventListener("blur",handlerInput);
