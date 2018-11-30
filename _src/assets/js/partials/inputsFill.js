@@ -40,3 +40,16 @@ inputJob.addEventListener("keyup",handlerInputJob); //when you write your job th
 inputJob.addEventListener("blur",handlerInputJob);// when you change the focus your job change (applicable after cutting and pasting)
 inputJob.addEventListener("change",handlerInputJob);
 inputJob.addEventListener("keydown",handlerInputJob);
+
+//TELEPHONE
+const inputPhone = document.querySelector("#phone");
+const phoneCard = document.querySelector(".mobile"); 
+
+function handlerInputMobile (){
+   
+    let dataInput = inputPhone.value;
+    phoneCard.href = `tel: +34 ${dataInput}`;
+    console.log(phoneCard.href);
+};
+
+inputPhone.addEventListener("keyup",handlerInputMobile);
