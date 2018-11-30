@@ -40,3 +40,18 @@ inputJob.addEventListener("keyup",handlerInputJob); //when you write your job th
 inputJob.addEventListener("blur",handlerInputJob);// when you change the focus your job change (applicable after cutting and pasting)
 inputJob.addEventListener("change",handlerInputJob);
 inputJob.addEventListener("keydown",handlerInputJob);
+
+//EMAIL
+
+const inputEmail = document.querySelector("#email");
+const emailCard = document.querySelector(".email"); 
+
+function handlerInputEmail (){
+    let dataInput = inputEmail.value;
+    emailCard.href=`mailto:${dataInput}`;
+};
+
+inputEmail.addEventListener("keyup",handlerInputEmail); //when you write your job the Card Change
+inputEmail.addEventListener("blur",handlerInputEmail);// when you change the focus your job change (applicable after cutting and pasting)
+inputEmail.addEventListener("change",handlerInputEmail);
+inputEmail.addEventListener("keydown",handlerInputEmail);
