@@ -55,3 +55,18 @@ inputEmail.addEventListener("keyup",handlerInputEmail); //when you write your jo
 inputEmail.addEventListener("blur",handlerInputEmail);// when you change the focus your job change (applicable after cutting and pasting)
 inputEmail.addEventListener("change",handlerInputEmail);
 inputEmail.addEventListener("keydown",handlerInputEmail);
+
+//GITHUB
+
+const inputGithub = document.querySelector("#github");
+const GithubCard = document.querySelector(".github"); 
+
+function handlerInputGithub (){
+    let dataInput = inputGithub.value;
+    GithubCard.href=`https://github.com/${dataInput}`;
+};
+
+inputGithub.addEventListener("keyup",handlerInputGithub); //when you write your job the Card Change
+inputGithub.addEventListener("blur",handlerInputGithub);// when you change the focus your job change (applicable after cutting and pasting)
+inputGithub.addEventListener("change",handlerInputGithub);
+inputGithub.addEventListener("keydown",handlerInputGithub);
