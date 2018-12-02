@@ -83,6 +83,6 @@ function handlerInputLinkedin(){
 };
 
 inputGithub.addEventListener("keyup",handlerInputLinkedin); //when you write your job the Card Change
-inputGithub.addEventListener("blur",handlerLinkedin);// when you change the focus your job change (applicable after cutting and pasting)
-inputGithub.addEventListener("change",handlerLinkedin);
-inputGithub.addEventListener("keydown",handlerLinkedin);
+inputGithub.addEventListener("blur",handlerInputLinkedin);// when you change the focus your job change (applicable after cutting and pasting)
+inputGithub.addEventListener("change",handlerInputLinkedin);
+inputGithub.addEventListener("keydown",handlerInputLinkedin);
