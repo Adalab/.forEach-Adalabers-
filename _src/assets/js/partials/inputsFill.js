@@ -70,3 +70,19 @@ inputGithub.addEventListener("keyup",handlerInputGithub); //when you write your 
 inputGithub.addEventListener("blur",handlerInputGithub);// when you change the focus your job change (applicable after cutting and pasting)
 inputGithub.addEventListener("change",handlerInputGithub);
 inputGithub.addEventListener("keydown",handlerInputGithub);
+
+
+//LINKEDING
+
+const inputLinkedin = document.querySelector("#linkedin");
+const LinkedinCard = document.querySelector(".linkedin"); 
+
+function handlerInputGithub (){
+    let dataInput = inputLinkedin.value;
+    LinkedinCard.href=`https://linkedin.com/${dataInput}`;
+};
+
+inputGithub.addEventListener("keyup",handlerInputLinkedin); //when you write your job the Card Change
+inputGithub.addEventListener("blur",handlerLinkedin);// when you change the focus your job change (applicable after cutting and pasting)
+inputGithub.addEventListener("change",handlerLinkedin);
+inputGithub.addEventListener("keydown",handlerLinkedin);
