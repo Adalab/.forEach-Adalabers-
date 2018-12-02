@@ -77,7 +77,7 @@ inputGithub.addEventListener("keydown",handlerInputGithub);
 const inputLinkedin = document.querySelector("#linkedin");
 const LinkedinCard = document.querySelector(".linkedin"); 
 
-function handlerInputGithub (){
+function handlerInputLinkedin(){
     let dataInput = inputLinkedin.value;
     LinkedinCard.href=`https://linkedin.com/${dataInput}`;
 };
