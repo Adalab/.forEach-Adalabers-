@@ -6,13 +6,8 @@
 
 @import 'core/variables';
 
-@import 'components/hidden-show';
 @import 'components/palettes';
 @import 'components/typography';
-
-@import 'pages/cardPreview';
-@import 'pages/designCard';
-@import 'pages/fillCard';
 
 @import 'layout/headerFirstpage';
 @import 'layout/headerDesignCard';
@@ -20,3 +15,10 @@
 @import 'layout/footer';
 @import 'layout/mainShare';
 @import 'layout/responsive';
+
+@import 'pages/cardPreview';
+@import 'pages/designCard';
+@import 'pages/fillCard';
+
+@import 'helpers/hidden-show';
+
