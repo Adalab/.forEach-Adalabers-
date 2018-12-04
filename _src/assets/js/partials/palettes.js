@@ -27,6 +27,4 @@ function handlerPalette (e) {
 }
 
 
-
-
 palettesOption.addEventListener("click", handlerPalette);
