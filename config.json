@@ -19,7 +19,12 @@
 		"src": [
       "_src/assets/js/main.js",
       "_src/assets/js/partials/inputsFill.js",
+<<<<<<< HEAD
       "_src/assets/js/partials/hidden.js"
+=======
+      "_src/assets/js/partials/palettes.js"
+
+>>>>>>> select-palette
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"
