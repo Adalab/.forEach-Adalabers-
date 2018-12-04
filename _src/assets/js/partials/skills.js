@@ -18,14 +18,17 @@ for (let i=0; i< checkboxElements.length; i++){
 }
 
 function reviewList (){
+    let list="";
     for (let i=0; i< checkboxElements.length; i++){
        
         if(checkboxElements[i].checked === true){
         
-            skillsElement.innerHTML = `<li class="list__item-skills">Html</li>`;
+            list += `<li class="list__item-skills"> ${checkboxElements[i].value}</li>`;
 
         }
     }
+    skillsElement.innerHTML = list;
+    
 }
 
 
