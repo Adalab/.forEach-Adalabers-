@@ -1,6 +1,5 @@
 .fill-card {
   margin-top: 27px;
-  padding-bottom: 30px;
   border-bottom: solid 1px $white-two;
 }
 
@@ -38,6 +37,7 @@
   font-family: $fontFamily-text;
   line-height: 20px;
   color: $dark-green-blue;
+  padding-bottom: 30px;
 }
 
 .item-label {
