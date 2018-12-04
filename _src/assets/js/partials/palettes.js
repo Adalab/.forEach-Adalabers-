@@ -12,16 +12,16 @@ const palettes = {
 
 let AllPalettes = Object.values(palettes);
 
-function removeClass () {
-    for(let i=0;i<AllPalettes.length;i++){
-        boxCard.classList.remove(AllPalettes[i]);
+function removeClass (array) {
+    for(let i=0;i<array.length;i++){
+        boxCard.classList.remove(array[i]);
     }
 }
 
 function handlerPalette (e) {
     let inputClick = e.target.value;
     let paletteClick = palettes[inputClick];
-    removeClass();
+    removeClass(AllPalettes);
     boxCard.classList.add("box__card");
     boxCard.classList.add(paletteClick);
 }

@@ -20,8 +20,8 @@
       "_src/assets/js/main.js",
       "_src/assets/js/partials/inputsFill.js",
       "_src/assets/js/partials/hidden.js",
-      "_src/assets/js/partials/palettes.js"
-
+      "_src/assets/js/partials/palettes.js",
+      "_src/assets/js/partials/typography.js"
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"
