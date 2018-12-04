@@ -12,9 +12,9 @@ const palettes = {
 
 let AllPalettes = Object.values(palettes);
 
-function removeClass (array) {
-    for(let i=0;i<array.length;i++){
-        boxCard.classList.remove(array[i]);
+function removeClass () {
+    for(let i=0;i<AllPalettes.length;i++){
+        boxCard.classList.remove(AllPalettes[i]);
     }
 }
 
