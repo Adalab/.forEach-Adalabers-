@@ -10,20 +10,20 @@ function handlerPrintSkills(event){
     reviewList();
 }
 
-for (let i=0; i< checkboxElements.length; i++){
+for (const skill of checkboxElements){
    
-   checkboxElements[i].addEventListener('click', handlerPrintSkills);
-   console.log(checkboxElements[i]);
+   skill.addEventListener('click', handlerPrintSkills);
+   console.log(skill);
   
 }
 
 function reviewList (){
     let list="";
-    for (let i=0; i< checkboxElements.length; i++){
+    for (const skill of checkboxElements) { 
        
-        if(checkboxElements[i].checked === true){
+        if(skill.checked === true){
         
-            list += `<li class="list__item-skills"> ${checkboxElements[i].value}</li>`;
+            list += `<li class="list__item-skills"> ${skill.value}</li>`;
 
         }
     }
