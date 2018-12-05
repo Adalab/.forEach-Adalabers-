@@ -5,37 +5,33 @@ const skillsElement = document.querySelector('.list__skills');
 
 function handlerPrintSkills(event){
     const clickedInput = event.currentTarget;
-    console.log(clickedInput);
-    console.dir(clickedInput);
     reviewList();
 }
 
 for (const skill of checkboxElements){
    
-   skill.addEventListener('click', handlerPrintSkills);
-   console.log(skill);
-  
+   skill.addEventListener('click', handlerPrintSkills);  
 }
 
-function reviewList (){
+ function reviewList (){
     let list="";
-    let acc= 0;
+     let acc= 0;
     for (const skill of checkboxElements) { 
        
         if(skill.checked === true){
         
             list += `<li class="list__item-skills">${skill.value}</li>`;
-            acc +=1;
-            console.log('contador', acc);
-        }else{
-            let noChecked = skill;
-            if (acc === 3){
-                noChecked.disabled = true;
-            }
-        }
+             acc +=1;
+           
+         }else{
+             let noChecked = skill;
+             if (acc === 3){
+                 noChecked.disabled = true;
+             }
+         }
  
-    }
-    skillsElement.innerHTML = list;
-    
+     }
+     skillsElement.innerHTML = list;
+     console.log('contador', acc);
 }
 
