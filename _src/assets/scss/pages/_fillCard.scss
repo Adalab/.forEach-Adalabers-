@@ -66,12 +66,22 @@
   align-items: center;
   margin-right: 20px;
 }
+.action__hiddenField {
+  display: none;
+}
 
 .image-preview {
   width: 30px;
   height: 30px;
   border: 1px solid $hospital-green;
 }
+
+.image-preview__file {
+  width: 100%;
+  display: block;
+}
+
+
 
 .container-skills {
   display: flex;
