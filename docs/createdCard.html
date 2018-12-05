@@ -30,7 +30,7 @@
  <span class="button">Reset</span>
 
                     </button>
-                    <div class="box__card">
+                    <div class="box__card" id="box">
                         <div class="userInfo">
                             <div class="detail"></div>
                              <h2 class="userInfo__name">Nombre Apellido</h2>
@@ -38,7 +38,7 @@
                              <h3 class="userInfo__job">Front-end developer</h3>
 
                         </div>
-                        <div class="img"></div>
+                        <div class="img image-preview__file"></div>
                         <ul class="list__icon">
                             <li class="list__item"> <a class="item__link mobile" href="">
                         <i class="fas fa-mobile-alt"></i>
@@ -191,9 +191,10 @@
                         <input placeholder="Ej: Front-end unicorn" id="job" type="text"
                         name="job" class="item-input" required>
                         <p class="item-label">Imágen de perfil</p>
-                        <div class="container-image"> <a href="" class="image-link">Añadir imagen</a>
-
-                            <div class="image-preview"></div>
+                        <div class="container-image">
+                            <button class="image-link" type="button">Añadir imagen</button>
+                            <input type="file" name="" id="img-selector" class="action__hiddenField">
+                            <div class="image-preview image-preview-small"></div>
                         </div>
                         <label for="email" class="item-label">Email</label>
                         <input placeholder="Ej: sally-hill@gmail.com" id="email"
@@ -261,20 +262,22 @@
                             <div class="arrow-share-down"></div> <i class="fas fa-chevron-down"></i>
 
                         </div>
-                        <button type="submit" class="button-create no-clicked"> <i class="far fa-address-card"></i>
+                        <div class="container-share">
+                            <button type="submit" class="button-create no-clicked"> <i class="far fa-address-card"></i>
 
-                            <p>Crear tarjeta</p>
-                        </button>
-                    </div>
-                    <div class="container-hide-section">
-                         <h3 class="text-hide-section">La tarjeta ha sido creada:</h3>
+                                <p>Crear tarjeta</p>
+                            </button>
+                            <div class="container-hide-section">
+                                 <h3 class="text-hide-section">La tarjeta ha sido creada:</h3>
  <a class="link-profile-card" href="enlace a tarjeta">enlace a tarjeta, enlace a la tarjeta</a>
 
-                        <button
-                        type="submit" class="share-twitter"> <i class="fab fa-twitter"></i>
+                                <button
+                                type="submit" class="share-twitter"> <i class="fab fa-twitter"></i>
 
-                            <p class="share-twitter-text">Compartir en twitter</p>
-                            </button>
+                                    <p class="share-twitter-text">Compartir en twitter</p>
+                                    </button>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
