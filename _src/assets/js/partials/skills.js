@@ -19,25 +19,23 @@ for (let i=0; i< checkboxElements.length; i++){
 
 function reviewList (){
     let list="";
+    let acc = 0;
     for (let i=0; i< checkboxElements.length; i++){
        
         if(checkboxElements[i].checked === true){
         
-            list += `<li class="list__item-skills"> ${checkboxElements[i].value}</li>`;
-
+            list += `<li class="list__item-skills">${checkboxElements[i].value}</li>`;
+            acc +=1;
+            console.log('contador', acc);
+        }else{
+            let noChecked = checkboxElements[i];
+            if (acc === 3){
+                noChecked.disabled = true;
+            }
         }
+ 
     }
     skillsElement.innerHTML = list;
     
 }
 
-
-
-/* <li class="list__item-skills">Html</li>
-                <li class="list__item-skills">css</li>
-                <li class="list__item-skills">gulp</li>
-                <li class="list__item-skills">git</li>
-                <li class="list__item-skills">Sass</li>
-                <li class="list__item-skills">JavaScript</li>
-                <li class="list__item-skills">AJAX</li>
-                <li class="list__item-skills">React</li>  */
