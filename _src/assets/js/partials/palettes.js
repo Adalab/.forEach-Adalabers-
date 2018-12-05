@@ -21,7 +21,7 @@ function removeClass () {
 function handlerPalette (e) {
     let inputClick = e.target.value;
     let paletteClick = palettes[inputClick];
-    removeClass();
+    removeClass(AllPalettes);
     boxCard.classList.add("box__card");
     boxCard.classList.add(paletteClick);
 }
