@@ -6,6 +6,7 @@ const uploadBtn = document.querySelector('.image-link');
 
 const fileField = document.querySelector('#img-selector');
 const profileImage = document.querySelector('.image-preview__file');
+const profileImageSmall = document.querySelector('.image-preview-small');
 
 function getImage(e){
   var myFile = e.currentTarget.files[0];
@@ -15,7 +16,11 @@ function getImage(e){
 }
 
 function writeImage() {
-  profileImage.src= fr.result;
+  profileImage.style.backgroundImage = `url(${fr.result})`;
+  profileImageSmall.style.backgroundImage = `url(${fr.result})`;
+ 
+
+
 }
 
 function fakeFileClick() {
