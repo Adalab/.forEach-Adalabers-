@@ -28,7 +28,9 @@ function resetElementsForm (){
 resetFormC.addEventListener("click",resetElementsForm);
 
 function resetElementsCard (){
+    const empty = "";
     let cardReset =[
+    nameCardReset,
     jobCardReset, 
     emailCardReset, 
     GithubCardReset, 
@@ -36,7 +38,12 @@ function resetElementsCard (){
     phoneCardReset,
     ];
     for (let i=0; i<cardReset.length; i++){
-        cardReset[i].innerHTML="";
+        cardReset[0].innerHTML="Nombre Apellido";
+        cardReset[1].innerHTML="Front-end developer";
+        cardReset[2].href= `mailto:${empty}`;
+        cardReset[3].href=`https://${empty}`;
+        cardReset[4].href=`https://${empty}`;
+        cardReset[5].href=`tel: +34 ${empty}`;
     };
 };
 resetFormC.addEventListener("click",resetElementsCard);
