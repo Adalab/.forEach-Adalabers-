@@ -7,7 +7,6 @@ const inputName = document.querySelector("#name");
 const nameCard = document.querySelector(".userInfo__name"); 
 
 function handlerInputName (){
-   
     let dataInput = inputName.value;
     if(inputName.value===""){
         nameCard.innerHTML="Nombre Apellido";
@@ -27,7 +26,6 @@ const inputJob = document.querySelector("#job");
 const jobCard = document.querySelector(".userInfo__job"); 
 
 function handlerInputJob (){
-   
     let dataInput = inputJob.value;
     if(inputJob.value===""){
         jobCard.innerHTML="Front-end developer";
