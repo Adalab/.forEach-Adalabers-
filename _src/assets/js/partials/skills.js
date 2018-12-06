@@ -31,7 +31,7 @@ function onlyThreeCheckBox() {
 
 
 function printSkill() {
-
+  cardListSkills.innerHTML = "";
   let liInput = "";
   let allItemsLi = "";
 
