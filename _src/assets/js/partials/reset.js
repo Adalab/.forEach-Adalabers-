@@ -12,6 +12,8 @@ const GithubCardReset = document.querySelector("#github");
 const LinkedinCardReset = document.querySelector("#linkedin");
 const phoneCardReset = document.querySelector("#mobile"); 
 
+//RESET FORM
+
 function resetElementsForm (){
     let elementsReset =[
         inputNameReset,
@@ -26,6 +28,8 @@ function resetElementsForm (){
     };
 };
 resetFormC.addEventListener("click",resetElementsForm);
+
+//RESET CARD PREVIEW
 
 function resetElementsCard (){
     const empty = "";
@@ -47,3 +51,40 @@ function resetElementsCard (){
     };
 };
 resetFormC.addEventListener("click",resetElementsCard);
+
+//RESET IMAGE CARD PREVIEW
+
+const uploadBtnR = document.querySelector('.image-link');
+const fileFieldR = document.querySelector('#img-selector');
+const profileImageR = document.querySelector('.image-preview__file');
+const profileImageSmallR = document.querySelector('.image-preview-small');
+
+function deleteImageR() {
+    profileImageR.style.backgroundImage = `url(../images/silueta.jpg)`;
+    profileImageSmallR.style.backgroundImage = `url(../images/silueta.jpg)`;
+}
+
+resetFormC.addEventListener("click", deleteImageR);
+
+
+
+// function getImageR(e){
+//     var myFileR = e.currentTarget.files[0];
+//     fr.addEventListener('load', writeImageR);
+//     fr.readAsDataURL(myFileR);
+//     document.querySelector(".img").classList.add("imgWhite");
+// }
+
+// function writeImageR() {
+//     profileImageR.style.backgroundImage = `url(${empty})`;
+//     profileImageSmallR.style.backgroundImage = `url(${empty})`;
+// }
+
+// function fakeFileClickR() {
+// fileFieldR.click(); 
+// }
+
+// fileFieldR.addEventListener('change', getImageR);
+// uploadBtnR.addEventListener('click', fakeFileClickR);
+
+
