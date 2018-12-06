@@ -92,10 +92,12 @@ const inputPhone = document.querySelector("#phone");
 const phoneCard = document.querySelector(".mobile"); 
 
 function handlerInputMobile (){
-   
+
     let dataInput = inputPhone.value;
     phoneCard.href = `tel: +34 ${dataInput}`;
     console.log(phoneCard.href);
 };
 
 inputPhone.addEventListener("keyup",handlerInputMobile);
+inputPhone.addEventListener("blur",handlerInputMobile);// when you change the focus your job change (applicable after cutting and pasting)
+inputPhone.addEventListener("change",handlerInputMobile);
