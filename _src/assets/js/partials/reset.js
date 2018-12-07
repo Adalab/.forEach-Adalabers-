@@ -60,31 +60,9 @@ const profileImageR = document.querySelector('.image-preview__file');
 const profileImageSmallR = document.querySelector('.image-preview-small');
 
 function deleteImageR() {
-    profileImageR.style.backgroundImage = `url(../images/silueta.jpg)`;
-    profileImageSmallR.style.backgroundImage = `url(../images/silueta.jpg)`;
+    profileImageR.style.backgroundImage = `url(assets/images/silueta.jpg)`;
+    profileImageSmallR.style.backgroundImage = "";
 }
 
 resetFormC.addEventListener("click", deleteImageR);
-
-
-
-// function getImageR(e){
-//     var myFileR = e.currentTarget.files[0];
-//     fr.addEventListener('load', writeImageR);
-//     fr.readAsDataURL(myFileR);
-//     document.querySelector(".img").classList.add("imgWhite");
-// }
-
-// function writeImageR() {
-//     profileImageR.style.backgroundImage = `url(${empty})`;
-//     profileImageSmallR.style.backgroundImage = `url(${empty})`;
-// }
-
-// function fakeFileClickR() {
-// fileFieldR.click(); 
-// }
-
-// fileFieldR.addEventListener('change', getImageR);
-// uploadBtnR.addEventListener('click', fakeFileClickR);
-
 
