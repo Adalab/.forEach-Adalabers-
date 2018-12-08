@@ -2,8 +2,7 @@
     background: linear-gradient(to bottom, $white-three, $white);
 }
 .tunning__responsive {
-    padding: 0px 20px 0px 20px;
-    max-width: 300px;
+    padding: 20px 20px 30px 20px;
 }
 
 @media all and (min-width:768px) {
@@ -21,6 +20,7 @@
 
     }
     .tunning__responsive {
+        max-width: 300px;
         grid-column: 1/2;
         grid-row: 1;
         padding: 0;
