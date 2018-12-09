@@ -26,7 +26,6 @@
     background-color: $white;
     border-radius: 2px;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-   
 }
 
 .img{
@@ -37,8 +36,8 @@
     width: 240px;
 }
 .imgWhite{
-   background-color: white;
-   background-image: none;
+    background-color: white;
+    background-image: none;
 }
 .button__reset{
 
@@ -63,8 +62,6 @@
         color: inherit;
         padding-top: 5px;
     }
-
-
 }
 
 .userInfo{
@@ -84,6 +81,7 @@
     color:$dark-green-blue;
     padding-bottom: 5px;
 }
+
 .userInfo__job{
     font-size: 16px;
     font-weight: $weightRegular;
@@ -169,7 +167,7 @@
 }
 
 .box__card--grey{
-   
+    
     .userInfo__name{
         color: $dark-grey;
     }
@@ -240,6 +238,6 @@
     font-family: $fontFamily-Hand;
 }
 
-.userInfo-libre{
+.userInfo--libre{
     font-family: $fontFamily-libre;
 }

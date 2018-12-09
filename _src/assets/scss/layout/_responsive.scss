@@ -4,8 +4,8 @@
 .tunning__responsive {
     padding: 0px 20px 0px 20px;
     max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 
 @media all and (min-width:768px) {
@@ -19,8 +19,7 @@
     .section__card {
         grid-column: 2/5;
         border-radius: 6px;
-        margin-left: 30px;
-
+        // margin-left: 30px;
     }
     .tunning__responsive {
         grid-column: 1/2;
