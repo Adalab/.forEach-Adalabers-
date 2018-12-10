@@ -19,7 +19,7 @@ function removeClassFont(){
 
 
 function handlerFonts (e) {
-    let inputClick = e.target.value;
+    let inputClick = e.target.getAttribute("data-font");
     let fontClassClick = fonts[inputClick];
     removeClassFont();
     boxFont.classList.add("userInfo");

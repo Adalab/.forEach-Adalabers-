@@ -1,8 +1,9 @@
-let palette = document.querySelector(".radio");
+const boxEl = document.querySelector("#box");
+let colorValue = boxEl.value;
 
 let data = 
 {
-    palette: 1,
+    palette: colorValue,
     typography: 2,
     name : "María García",
     job: "Front-end developer",
