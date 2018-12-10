@@ -1,4 +1,4 @@
-
+let palette = document.querySelector(".radio");
 
 let data = 
 {
