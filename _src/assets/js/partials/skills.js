@@ -48,7 +48,7 @@ function printSkill() {
 
 
 function handlerClickSkill() {
-  onlyThreeCheckBox();  //first counter
+  onlyThreeCheckBox(); //first counter
   printSkill(); //second print
 }
 
