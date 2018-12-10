@@ -22,7 +22,8 @@
       "_src/assets/js/partials/hidden.js",
       "_src/assets/js/partials/palettes.js",
       "_src/assets/js/partials/selectImage.js",
-      "_src/assets/js/partials/typography.js"
+      "_src/assets/js/partials/typography.js",
+      "_src/assets/js/partials/json.js"
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"
