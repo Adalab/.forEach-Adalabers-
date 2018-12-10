@@ -19,7 +19,7 @@ function removeClass () {
 }
 
 function handlerPalette (e) {
-    let inputClick = e.target.value;
+    let inputClick = e.target.dataset[palette];
     let paletteClick = palettes[inputClick];
     removeClass();
     boxCard.classList.add("box__card");
