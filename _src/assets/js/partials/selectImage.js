@@ -18,9 +18,6 @@ function getImage(e){
 function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profileImageSmall.style.backgroundImage = `url(${fr.result})`;
- 
-
-
 }
 
 function fakeFileClick() {
