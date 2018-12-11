@@ -24,10 +24,7 @@
       "_src/assets/js/partials/selectImage.js",
       "_src/assets/js/partials/typography.js",
       "_src/assets/js/partials/skills.js",
-<<<<<<< HEAD
-=======
       "_src/assets/js/partials/reset.js",
->>>>>>> dc68216039236dab5f20c50ff070f2d3f3a9e8d5
       "_src/assets/js/partials/json.js"
 		],
 		"dest": "public/assets/js/",
