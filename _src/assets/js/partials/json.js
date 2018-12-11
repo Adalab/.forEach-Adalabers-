@@ -31,7 +31,7 @@ function createCardData (){
     linkedin: linkedinDataValue,
     github: githubDataValue,
     photo: imgDataValue,
-    skills: ["HTML", "Sass", "JavaScript"];
+    skills: ["HTML", "Sass", "JavaScript"],
   }
 }
 
