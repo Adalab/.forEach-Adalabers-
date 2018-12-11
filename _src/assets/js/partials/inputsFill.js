@@ -72,7 +72,7 @@ inputGithub.addEventListener("change",handlerInputGithub);
 inputGithub.addEventListener("keydown",handlerInputGithub);
 
 
-//LINKEDING
+//LINKEDIN
 
 const inputLinkedin = document.querySelector("#linkedin");
 const LinkedinCard = document.querySelector(".linkedin"); 
@@ -82,10 +82,10 @@ function handlerInputLinkedin(){
     LinkedinCard.href=`https://linkedin.com/${dataInput}`;
 };
 
-inputGithub.addEventListener("keyup",handlerInputLinkedin); //when you write your job the Card Change
-inputGithub.addEventListener("blur",handlerInputLinkedin);// when you change the focus your job change (applicable after cutting and pasting)
-inputGithub.addEventListener("change",handlerInputLinkedin);
-inputGithub.addEventListener("keydown",handlerInputLinkedin);
+inputLinkedin.addEventListener("keyup",handlerInputLinkedin); //when you write your job the Card Change
+inputLinkedin.addEventListener("blur",handlerInputLinkedin);// when you change the focus your job change (applicable after cutting and pasting)
+inputLinkedin.addEventListener("change",handlerInputLinkedin);
+inputLinkedin.addEventListener("keydown",handlerInputLinkedin);
 
 //TELEPHONE
 const inputPhone = document.querySelector("#phone");
@@ -95,7 +95,6 @@ function handlerInputMobile (){
    
     let dataInput = inputPhone.value;
     phoneCard.href = `tel: +34 ${dataInput}`;
-    console.log(phoneCard.href);
 };
 
 inputPhone.addEventListener("keyup",handlerInputMobile);
