@@ -1,4 +1,4 @@
-'use strict';
+
 function createCardData (){
 
   const boxEl = document.querySelector("#box");
