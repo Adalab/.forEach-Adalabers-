@@ -23,8 +23,12 @@
       "_src/assets/js/partials/palettes.js",
       "_src/assets/js/partials/selectImage.js",
       "_src/assets/js/partials/typography.js",
+<<<<<<< HEAD
       "_src/assets/js/partials/skills.js",
       "_src/assets/js/partials/reset.js"
+=======
+      "_src/assets/js/partials/json.js"
+>>>>>>> json
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"

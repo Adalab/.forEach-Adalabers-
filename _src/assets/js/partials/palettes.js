@@ -19,11 +19,14 @@ function removeClass () {
 }
 
 function handlerPalette (e) {
-    let inputClick = e.target.dataset[palette];
+    let inputClick = e.target.getAttribute("data-palette");
+    let valueClick = e.target.getAttribute("value");
     let paletteClick = palettes[inputClick];
     removeClass();
     boxCard.classList.add("box__card");
     boxCard.classList.add(paletteClick);
+    boxCard.setAttribute("value", valueClick);
+
 }
 
 
