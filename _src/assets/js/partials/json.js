@@ -1,9 +1,3 @@
-
-function createCardData (){
-
-
-
-
   let data = {
     palette: 1,
     typography: 1,
@@ -16,5 +10,5 @@ function createCardData (){
     photo: "",
     skills: [],
   }
-}
+
 
