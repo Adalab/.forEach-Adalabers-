@@ -4,7 +4,7 @@ const allSkillsInputs = document.querySelectorAll(".checkbox-input");
 const cardListSkills = document.querySelector(".list__skills");
 let contentListSkills = "";
 cardListSkills.innerHTML = "";
-
+//let allChecked=[];
 
 
 function onlyThreeCheckBox() {
@@ -34,10 +34,12 @@ function printSkill() {
   cardListSkills.innerHTML = "";
   let liInput = "";
   let allItemsLi = "";
+  //allChecked=[];
 
   for (let i = 0; i < allSkillsInputs.length; i++) { //each Skill
 
     if (allSkillsInputs[i].checked === true) { //if Skill is checked
+     // allChecked += allSkillsInputs[i].value;
       liInput = `<li class="list__item-skills">${allSkillsInputs[i].value}</li>`; //Add item li
       allItemsLi += liInput;
 
