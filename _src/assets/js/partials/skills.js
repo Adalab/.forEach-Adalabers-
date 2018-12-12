@@ -45,7 +45,7 @@ function printSkill() {
 
       cardListSkills.innerHTML = `${allItemsLi}`;
 
-      data.skills[i]=allSkillsInputs[i].value;
+      dataBack.skills[i]=allSkillsInputs[i].value;
     }
   }
 };
