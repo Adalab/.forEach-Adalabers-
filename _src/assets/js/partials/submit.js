@@ -14,6 +14,9 @@ function handlerSubmit() {
         urlTextEl.href = `${urlTwitter}`;
         const linkTweetEl = document.querySelector(".share-twitter");
         linkTweetEl.href = `https://twitter.com/intent/tweet?text=Mira%20mi%20tarjeta%20${urlTwitter}`;
+        const hiddenTwitter = document.querySelector(".container-hide-section");
+        hiddenTwitter.classList.remove("hidden");
+        submitEl.classList.add("clicked");
         console.log(urlTwitter);
     })
     .catch((error) => console.log(error))
