@@ -7,7 +7,15 @@ function handlerSubmit() {
             'content-type': 'application/json'
         },
     }).then((responLink) => responLink.json())
-    .then((link) => console.log(link))
+    .then((link) => {
+        let urlTwitter = link.cardURL;
+        const urlTextEl = document.querySelector('.link-profile-card');
+        urlTextEl.innerHTML = urlTwitter;
+        urlTextEl.href = `${urlTwitter}`;
+        const linkTweetEl = document.querySelector(".share-twitter");
+        linkTweetEl.href = `https://twitter.com/intent/tweet?${urlTwitter}`;
+        console.log(urlTwitter);
+    })
     .catch((error) => console.log(error))
 }
 
