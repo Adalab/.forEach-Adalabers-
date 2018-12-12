@@ -6,7 +6,6 @@ function printLocalStorage (){
     const inputName = document.querySelector("#name");
     inputName.value=nameData;
     console.log(nameData);
-  
 }
 
 function saveDates (){
