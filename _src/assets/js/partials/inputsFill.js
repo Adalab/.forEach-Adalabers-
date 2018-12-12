@@ -83,7 +83,7 @@ const LinkedinCard = document.querySelector(".linkedin");
 
 function handlerInputLinkedin(){
     let dataInput = inputLinkedin.value;
-    LinkedinCard.href=`https://linkedin.com/${dataInput}`;
+    LinkedinCard.href=`https://linkedin.com/in/${dataInput}`;
     dataBack.linkedin= dataInput;
 };
 
