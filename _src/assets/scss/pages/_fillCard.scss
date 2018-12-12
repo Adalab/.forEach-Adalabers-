@@ -1,6 +1,5 @@
 .fill-card {
-  margin-top: 27px;
-  padding-bottom: 30px;
+  margin-top: 10px;
   border-bottom: solid 1px $white-two;
 }
 
@@ -8,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .title-dropdown__title-fill {
@@ -38,6 +37,7 @@
   font-family: $fontFamily-text;
   line-height: 20px;
   color: $dark-green-blue;
+  padding-bottom: 30px;
 }
 
 .item-label {

@@ -31,24 +31,28 @@ function onlyThreeCheckBox() {
 
 
 function printSkill() {
-
+  cardListSkills.innerHTML = "";
   let liInput = "";
   let allItemsLi = "";
+  //allChecked=[];
 
   for (let i = 0; i < allSkillsInputs.length; i++) { //each Skill
 
     if (allSkillsInputs[i].checked === true) { //if Skill is checked
+
       liInput = `<li class="list__item-skills">${allSkillsInputs[i].value}</li>`; //Add item li
       allItemsLi += liInput;
 
       cardListSkills.innerHTML = `${allItemsLi}`;
+
+      data.skills[i]=allSkillsInputs[i].value;
     }
   }
 };
 
 
 function handlerClickSkill() {
-  onlyThreeCheckBox();  //first counter
+  onlyThreeCheckBox(); //first counter
   printSkill(); //second print
 }
 

@@ -8,11 +8,12 @@ const nameCard = document.querySelector(".userInfo__name");
 
 function handlerInputName (){
     let dataInput = inputName.value;
+
     if(inputName.value===""){
         nameCard.innerHTML="Nombre Apellido";
-    }
-    else{
+    } else{
         nameCard.innerHTML = dataInput;
+        data.name = dataInput;
     };
 };
 
@@ -31,6 +32,7 @@ function handlerInputJob (){
         jobCard.innerHTML="Front-end developer";
     } else{
         jobCard.innerHTML = dataInput;
+        data.job = dataInput;
     };
 };
 
@@ -47,6 +49,7 @@ const emailCard = document.querySelector(".email");
 function handlerInputEmail (){
     let dataInput = inputEmail.value;
     emailCard.href=`mailto:${dataInput}`;
+    data.email= dataInput;
 };
 
 inputEmail.addEventListener("keyup",handlerInputEmail); //when you write your job the Card Change
@@ -62,6 +65,7 @@ const GithubCard = document.querySelector(".github");
 function handlerInputGithub (){
     let dataInput = inputGithub.value;
     GithubCard.href=`https://github.com/${dataInput}`;
+    data.github= dataInput;
 };
 
 inputGithub.addEventListener("keyup",handlerInputGithub); //when you write your job the Card Change
@@ -70,7 +74,7 @@ inputGithub.addEventListener("change",handlerInputGithub);
 inputGithub.addEventListener("keydown",handlerInputGithub);
 
 
-//LINKEDING
+//LINKEDIN
 
 const inputLinkedin = document.querySelector("#linkedin");
 const LinkedinCard = document.querySelector(".linkedin"); 
@@ -78,12 +82,13 @@ const LinkedinCard = document.querySelector(".linkedin");
 function handlerInputLinkedin(){
     let dataInput = inputLinkedin.value;
     LinkedinCard.href=`https://linkedin.com/${dataInput}`;
+    data.linkedin= dataInput;
 };
 
-inputGithub.addEventListener("keyup",handlerInputLinkedin); //when you write your job the Card Change
-inputGithub.addEventListener("blur",handlerInputLinkedin);// when you change the focus your job change (applicable after cutting and pasting)
-inputGithub.addEventListener("change",handlerInputLinkedin);
-inputGithub.addEventListener("keydown",handlerInputLinkedin);
+inputLinkedin.addEventListener("keyup",handlerInputLinkedin); //when you write your job the Card Change
+inputLinkedin.addEventListener("blur",handlerInputLinkedin);// when you change the focus your job change (applicable after cutting and pasting)
+inputLinkedin.addEventListener("change",handlerInputLinkedin);
+inputLinkedin.addEventListener("keydown",handlerInputLinkedin);
 
 //TELEPHONE
 const inputPhone = document.querySelector("#phone");
@@ -93,7 +98,7 @@ function handlerInputMobile (){
 
     let dataInput = inputPhone.value;
     phoneCard.href = `tel: +34 ${dataInput}`;
-    console.log(phoneCard.href);
+    data.phone= dataInput;
 };
 
 inputPhone.addEventListener("keyup",handlerInputMobile);
