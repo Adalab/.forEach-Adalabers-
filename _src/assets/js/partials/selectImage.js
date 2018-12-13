@@ -20,6 +20,7 @@ function writeImage() {
   profileImageSmall.style.backgroundImage = `url(${fr.result})`;
   dataBack.photo= fr.result;
   saveDates ();
+
 }
 
 function fakeFileClick() {

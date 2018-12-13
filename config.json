@@ -28,7 +28,6 @@
       "_src/assets/js/partials/skills.js",
       "_src/assets/js/partials/reset.js",
       "_src/assets/js/partials/submit.js"
-      
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"
