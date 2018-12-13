@@ -18,16 +18,15 @@ function removeClass () {
     }
 }
 
-function handlerPalette (e) {
-    let inputClick = e.target.getAttribute("data-palette");
-    let valueClick = e.target.getAttribute("value");
-    let paletteClick = palettes[inputClick];
+function handlerPalette(e) {
+    let inputClick = e.target.getAttribute("data-palette"); // clave objeto
+    let valueClick = e.target.getAttribute("value"); //numero
+    let paletteClick = palettes[inputClick]; // valor objeto --clave
     removeClass();
     boxCard.classList.add("box__card");
     boxCard.classList.add(paletteClick);
     boxCard.setAttribute("value", valueClick);
-
+    dataBack.palette = parseInt(valueClick);
 }
-
 
 palettesOption.addEventListener("click", handlerPalette);

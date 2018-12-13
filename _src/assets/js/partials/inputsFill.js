@@ -22,6 +22,8 @@ inputName.addEventListener("keyup",handlerInputName); //when you write your name
 inputName.addEventListener("blur",handlerInputName);// when you change the focus your name change (applicable after cutting and pasting)
 inputName.addEventListener("change",handlerInputName);
 inputName.addEventListener("keydown",handlerInputName);
+window.addEventListener("load",handlerInputName);
+
 
 //JOB
 const inputJob = document.querySelector("#job");
@@ -42,6 +44,8 @@ inputJob.addEventListener("keyup",handlerInputJob); //when you write your job th
 inputJob.addEventListener("blur",handlerInputJob);// when you change the focus your job change (applicable after cutting and pasting)
 inputJob.addEventListener("change",handlerInputJob);
 inputJob.addEventListener("keydown",handlerInputJob);
+window.addEventListener("load",handlerInputJob);
+
 
 //EMAIL
 
@@ -58,6 +62,8 @@ inputEmail.addEventListener("keyup",handlerInputEmail); //when you write your jo
 inputEmail.addEventListener("blur",handlerInputEmail);// when you change the focus your job change (applicable after cutting and pasting)
 inputEmail.addEventListener("change",handlerInputEmail);
 inputEmail.addEventListener("keydown",handlerInputEmail);
+window.addEventListener("load",handlerInputEmail);
+
 
 //GITHUB
 
@@ -74,6 +80,7 @@ inputGithub.addEventListener("keyup",handlerInputGithub); //when you write your 
 inputGithub.addEventListener("blur",handlerInputGithub);// when you change the focus your job change (applicable after cutting and pasting)
 inputGithub.addEventListener("change",handlerInputGithub);
 inputGithub.addEventListener("keydown",handlerInputGithub);
+window.addEventListener("load",handlerInputGithub);
 
 
 //LINKEDIN
@@ -91,6 +98,7 @@ inputLinkedin.addEventListener("keyup",handlerInputLinkedin); //when you write y
 inputLinkedin.addEventListener("blur",handlerInputLinkedin);// when you change the focus your job change (applicable after cutting and pasting)
 inputLinkedin.addEventListener("change",handlerInputLinkedin);
 inputLinkedin.addEventListener("keydown",handlerInputLinkedin);
+window.addEventListener("load",handlerInputLinkedin);
 
 //TELEPHONE
 const inputPhone = document.querySelector("#phone");
@@ -104,3 +112,4 @@ function handlerInputMobile (){
 };
 
 inputPhone.addEventListener("keyup",handlerInputMobile);
+window.addEventListener("load",handlerInputMobile);

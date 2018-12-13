@@ -19,11 +19,13 @@ function removeClassFont(){
 
 
 function handlerFonts (e) {
-    let inputClick = e.target.getAttribute("data-font");
-    let fontClassClick = fonts[inputClick];
+    let inputClick = e.target.getAttribute("data-font"); //clave objeto
+    let valueClick = e.target.getAttribute("value"); //numero
+    let fontClassClick = fonts[inputClick]; // valor del objeto (clave)
     removeClassFont();
     boxFont.classList.add("userInfo");
     boxFont.classList.add(fontClassClick);
+    dataBack.typography = parseInt(valueClick);
 }
 
 fontOption.addEventListener("click", handlerFonts);
