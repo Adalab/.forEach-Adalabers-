@@ -46,7 +46,7 @@ inputJob.addEventListener("keyup",handlerInputJob); //when you write your job th
 inputJob.addEventListener("blur",handlerInputJob);// when you change the focus your job change (applicable after cutting and pasting)
 inputJob.addEventListener("change",handlerInputJob);
 inputJob.addEventListener("keydown",handlerInputJob);
-window.addEventListener("load",handlerInputJob);
+
 
 
 //EMAIL
