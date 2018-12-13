@@ -18,17 +18,23 @@ function handlerHidden(event) {
 /* si el boton que pulsé es el de diseña, le decimos que se oculte el bloque de paleta y letra*/
     designElement.classList.toggle('hidden');
     arrowDesignElement.classList.toggle('fa-chevron-up');
+    fillElement.classList.add('hidden');
+    shareElement.classList.add('hidden');
 
   }else if (currentClicked === buttonFillElement){
 /*Sino si el boton que pulsé es el de fill, le decimos que se oculte ese bloque*/
     fillElement.classList.toggle('hidden');
     arrowFillElement.classList.toggle('fa-chevron-up');
+    shareElement.classList.add('hidden');
+    designElement.classList.add('hidden');
 
   } else {
   /*Sino , le decimos que se oculte el bloque que queda, 
   como ya no tenemos mas botones no hace falta por la condicion*/
     shareElement.classList.toggle('hidden');
     arrowShareElement.classList.toggle('fa-chevron-up');
+    designElement.classList.add('hidden');
+    fillElement.classList.add('hidden');
   }
 }
 
@@ -38,25 +44,3 @@ buttonFillElement.addEventListener('click', handlerHidden);
 
 buttonShareElement.addEventListener('click', handlerHidden);
 
-
-/*FORMA DE HACER SIN USAR CURRENT-TARGET*/
-/*function handlerHiddenDesign() {
-  designElement.classList.toggle('hidden');
-
-}
-buttonDesignElement.addEventListener('click', handlerHiddenDesign);
-
-function handlerHiddenFill() {
-  fillElement.classList.toggle('hidden');
-  console.log(fillElement);
-
-}
-buttonFillElement.addEventListener('click', handlerHiddenFill);
-console.log(buttonFillElement);
-
-
-function handlerHiddenShare() {
-  shareElement.classList.toggle('hidden');
-
-}
-buttonShareElement.addEventListener('click', handlerHiddenShare);*/
