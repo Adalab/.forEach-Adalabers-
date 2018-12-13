@@ -9,25 +9,25 @@ function printLocalStorage (){
     const inputEmail = document.querySelector("#email");
 
 
-    let nameData= saveData.name;
+    let nameData= saveData.name; //name
     inputName.value=nameData;
 
-    let jobData= saveData.job;
+    let jobData= saveData.job; //job
     inputJob.value=jobData;
 
-    let emailData= saveData.email;
+    let emailData= saveData.email;//email
     inputEmail.value=emailData;
 
-    let githubData= saveData.github;
+    let githubData= saveData.github; //github
     inputGithub.value=githubData;
 
-    let linkedinData= saveData.linkedin;
+    let linkedinData= saveData.linkedin; //linkedin
     inputLinkedin.value=linkedinData;
 
-    let phoneData= saveData.phone;
+    let phoneData= saveData.phone;//phone
     inputPhone.value=phoneData;
 
-    let paletteData= saveData.palette;
+    let paletteData= saveData.palette; //palette
     let paletteClicked = document.querySelector(`.palette${paletteData}`);
     paletteClicked.setAttribute("checked",true); 
     let inputClick= paletteClicked.getAttribute("data-palette"); // Paleta clickeada 
@@ -35,14 +35,16 @@ function printLocalStorage (){
     removeClass();
     boxCard.classList.add("box__card");
     boxCard.classList.add(classPaletteClick);
+
+    let typoData= saveData.typography; //typography
+    let typoClicked = document.querySelector(`.typography${typoData}`);
+    typoClicked.setAttribute("checked",true); 
+    let inputClickTypo= typoClicked.getAttribute("data-font"); // Paleta clickeada 
+    let classTypoClick = fonts[inputClickTypo]; // valor objeto --clase
+    boxFont.classList.add("userInfo");
+    boxFont.classList.add(classTypoClick);
     
 
-    
-    
- 
-    let typographyData= saveData.typography; 
-    let typographyCliked = document.querySelector(`.typography${typographyData}`);
-    //typographyCliked.setAttribute("checked",true);  
     
 
 }
