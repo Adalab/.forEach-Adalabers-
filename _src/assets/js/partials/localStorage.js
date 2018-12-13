@@ -24,11 +24,24 @@ function printLocalStorage(){
     inputEmail.value = emailData;
     emailCard.href = `mailto:${emailData}`;
 
-    let phoneCard = document.querySelector("#phone");
-    const inputPhone = document.querySelector(".mobile");
+    let phoneCard = document.querySelector(".mobile");
+    const inputPhone = document.querySelector("#phone");
     let phoneData = saveData.phone;
     inputPhone.value = phoneData;
     phoneCard.href = phoneData;
+
+    let linkedinCard = document.querySelector(".linkedin");
+    const inputLinkedin = document.querySelector("#linkedin");
+    let linkedinData = saveData.linkedin;
+    inputLinkedin.value = linkedinData;
+    linkedinCard.href = `https://linkedin.com/in/${linkedinData}`;
+
+    let githubCard = document.querySelector(".github");
+    const inputGithub = document.querySelector("#github");
+    let githubData = saveData.github;
+    inputGithub.value = githubData;
+    githubCard.href = `https://github.com/${githubData}`;
+    console.log(githubData);
 };
 
 
