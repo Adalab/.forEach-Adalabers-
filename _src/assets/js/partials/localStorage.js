@@ -1,6 +1,4 @@
 
-<<<<<<< HEAD
-=======
 function saveDates (){
     localStorage.setItem("dataBackLocal",JSON.stringify(dataBack));
 }
@@ -52,4 +50,3 @@ function printLocalStorage(){
 
 window.addEventListener("load", printLocalStorage);
 
->>>>>>> 1281fb60dc7b71945cd9afa20877835e02dc7c7d
