@@ -17,7 +17,7 @@ function handlerHidden(event) {
   if (currentClicked === buttonDesignElement){   
 /* si el boton que pulsé es el de diseña, le decimos que se oculte el bloque de paleta y letra*/
     designElement.classList.toggle('hidden');
-    // arrowDesignElement.classList.toggle('fa-chevron-down');
+    arrowDesignElement.classList.toggle('fa-chevron-down');
     if(arrowDesignElement.classList.contains('fa-chevron-up')){
       arrowDesignElement.classList.remove('fa-chevron-up');
       arrowDesignElement.classList.add('fa-chevron-down');
