@@ -1,5 +1,9 @@
 let saveData = JSON.parse(localStorage.getItem("dataBackLocal")); //saveData es mi cadena ahora objeto
 
+function saveDates () {
+  localStorage.setItem("dataBackLocal",JSON.stringify(dataBack));
+}
+
 function printLocalStorage() {
 
   if (saveData) {
