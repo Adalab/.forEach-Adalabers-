@@ -18,6 +18,7 @@ function removeClass () {
     }
 }
 
+
 function handlerPalette (e) {
     let inputClick = e.target.getAttribute("data-palette");
     let valueClick = e.target.getAttribute("value");
@@ -26,7 +27,9 @@ function handlerPalette (e) {
     boxCard.classList.add("box__card");
     boxCard.classList.add(paletteClick);
     boxCard.setAttribute("value", valueClick);
-
+    dataBack.palette = parseInt(valueClick);
+    saveDates ();
+    
 }
 
 
