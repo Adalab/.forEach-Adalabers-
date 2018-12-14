@@ -18,6 +18,15 @@ function printLocalStorage() {
   inputJob.value = jobData;
   jobCard.innerHTML = jobData;
 
+  const profileImgLs = document.querySelector('.image-preview__file'); //image
+  const profileImgSmallLs = document.querySelector('.image-preview-small');
+  let imageData = saveData.photo;
+  profileImgLs.style.backgroundImage = `url(${imageData})`;
+  profileImgSmallLs.style.backgroundImage = `url(${imageData})`;
+
+
+
+
   let emailCard = document.querySelector(".email"); //mail
   const inputEmail = document.querySelector("#email");
   let emailData = saveData.email;
@@ -63,7 +72,7 @@ function printLocalStorage() {
   boxCard.classList.add("box__card");
   boxCard.classList.add(classPal);
 
-  const boxFont = document.querySelector("#userInfo"); //tipografías
+  const boxFont = document.querySelector("#userInfo"); //typography
   const typographiesValue = [
     "userInfo--ubuntu",
     "userInfo--quaternary",
