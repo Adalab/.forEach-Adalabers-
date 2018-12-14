@@ -13,7 +13,7 @@ function handlerInputName (){
         nameCard.innerHTML="Nombre Apellido";
     } else{
         nameCard.innerHTML = dataInput;
-        data.name = dataInput;
+        dataBack.name = dataInput;
     };
 };
 
