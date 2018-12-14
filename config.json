@@ -19,15 +19,14 @@
 		"src": [
       "_src/assets/js/main.js",
       "_src/assets/js/partials/json.js",
+      "_src/assets/js/partials/localStorage.js",
       "_src/assets/js/partials/inputsFill.js",
       "_src/assets/js/partials/hidden.js",
-      "_src/assets/js/partials/typography.js",
       "_src/assets/js/partials/palettes.js",
       "_src/assets/js/partials/selectImage.js",
+      "_src/assets/js/partials/typography.js",
       "_src/assets/js/partials/skills.js",
-      "_src/assets/js/partials/sumbit.js"
- 
-      
+      "_src/assets/js/partials/submit.js"
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"

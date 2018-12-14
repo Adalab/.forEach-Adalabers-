@@ -1,4 +1,3 @@
-
   let dataBack = {
     palette: "",
     typography: "",
@@ -12,3 +11,7 @@
     skills: "",
   }
 
+
+  function saveDates (){ //recojo en Localstore la cadena de dataBack
+    localStorage.setItem("dataBackLocal",JSON.stringify(dataBack));
+}
