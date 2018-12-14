@@ -18,14 +18,11 @@ function getImage(e){
 function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profileImageSmall.style.backgroundImage = `url(${fr.result})`;
-<<<<<<< HEAD
-=======
   data.photo= profileImage.style.backgroundImage;
->>>>>>> 308c74261b4824251daa341d888d9b03ae3ed44a
 }
 
 function fakeFileClick() {
-fileField.click(); 
+  fileField.click(); 
 }
 
 fileField.addEventListener('change', getImage);
