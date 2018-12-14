@@ -1,13 +1,15 @@
 let saveData = JSON.parse(localStorage.getItem("dataBackLocal"));
+//if saveData=dataBack
 function saveDates (){
     localStorage.setItem("dataBackLocal",JSON.stringify(dataBack));
 }
+
 function printFormCard(){
     let nameCard = document.querySelector(".userInfo__name"); //name
     const inputName = document.querySelector("#name");
-    let nameData = saveData.name;
+    let nameData = saveData.name;//saveData debe ser dataBack
     inputName.value = nameData;
-    nameCard.innerHTML = nameData;
+    nameCard.innerHTML= nameData;
 
     let jobCard = document.querySelector(".userInfo__job"); //job
     const inputJob = document.querySelector("#job");
