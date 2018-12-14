@@ -1,14 +1,8 @@
-
+let saveData = JSON.parse(localStorage.getItem("dataBackLocal"));
 function saveDates (){
     localStorage.setItem("dataBackLocal",JSON.stringify(dataBack));
 }
-
-function printLocalStorage(){
-    const saveData = JSON.parse(localStorage.getItem("dataBackLocal"));
-    if (saveData) {
-        dataBack = saveData;
-    }
-
+function printFormCard(){
     let nameCard = document.querySelector(".userInfo__name"); //name
     const inputName = document.querySelector("#name");
     let nameData = saveData.name;
@@ -45,6 +39,15 @@ function printLocalStorage(){
     inputGithub.value = githubData;
     githubCard.href = `https://github.com/${githubData}`;
     console.log(githubData);
+}
+
+function printLocalStorage(){
+    const saveData = JSON.parse(localStorage.getItem("dataBackLocal"));
+    if (saveData) {
+        dataBack = saveData;
+    }
+    printFormCard();
+
 };
 
 
