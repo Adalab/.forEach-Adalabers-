@@ -63,7 +63,30 @@ function printLocalStorage() {
   boxCard.classList.add("box__card");
   boxCard.classList.add(classPal);
 
+  const boxFont = document.querySelector("#userInfo"); //tipografías
+  const typographiesValue = [
+    "userInfo--ubuntu",
+    "userInfo--quaternary",
+    "userInfo--mont",
+    "userInfo--hand",
+    "userInfo--libre"
+  ];
+  
+  let valueTyp = saveData.typography - 1;
+  let classTyp = typographiesValue[valueTyp];
+  console.log('classTyp', classTyp);
+  console.log ('valueTyp', valueTyp);
 
+  function removeClassTyp(){
+    for (let i=0; i<typographiesValue.length; i++){
+        boxFont.classList.remove(typographiesValue[i]);
+    }
+}
+
+removeClassTyp();
+
+boxFont.classList.add("userInfo");
+    boxFont.classList.add(classTyp);
 };
 
 
