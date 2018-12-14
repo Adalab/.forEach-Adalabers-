@@ -26,7 +26,6 @@
       "_src/assets/js/partials/selectImage.js",
       "_src/assets/js/partials/typography.js",
       "_src/assets/js/partials/skills.js",
-      "_src/assets/js/partials/reset.js",
       "_src/assets/js/partials/submit.js"
 		],
 		"dest": "public/assets/js/",

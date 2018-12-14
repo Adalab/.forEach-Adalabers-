@@ -26,6 +26,7 @@ function handlerFonts (e) {
     boxFont.classList.add("userInfo");
     boxFont.classList.add(fontClassClick);
     dataBack.typography = parseInt(valueClick);
+    saveDates ();
 }
 
 fontOption.addEventListener("click", handlerFonts);
