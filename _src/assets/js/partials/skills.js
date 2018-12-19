@@ -36,16 +36,21 @@ function printSkill() {
   let allItemsLi = "";
   //allChecked=[];
 
+  let allSkills =[];
+  let acc =-1;
+
   for (let i = 0; i < allSkillsInputs.length; i++) { //each Skill
 
     if (allSkillsInputs[i].checked === true) { //if Skill is checked
+      acc += 1;
+      allSkills[acc]=  allSkillsInputs[i].value;
 
       liInput = `<li class="list__item-skills">${allSkillsInputs[i].value}</li>`; //Add item li
       allItemsLi += liInput;
-
+      
       cardListSkills.innerHTML = `${allItemsLi}`;
 
-      dataBack.skills[i]=allSkillsInputs[i].value;
+      dataBack.skills=allSkills;
     }
   }
 };

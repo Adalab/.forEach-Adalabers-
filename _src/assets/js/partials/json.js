@@ -1,9 +1,9 @@
   let dataBack = {
-    palette: 1,
-    typography: 1,
+    palette: "",
+    typography: "",
     name: "",
-    job: "",
-    phone: "",
+    job:"",
+    phone:"" ,
     email: "",
     linkedin: "",
     github: "",

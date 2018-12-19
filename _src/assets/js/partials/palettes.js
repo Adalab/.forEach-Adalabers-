@@ -27,6 +27,7 @@ function handlerPalette(e) {
     boxCard.classList.add(paletteClick);
     boxCard.setAttribute("value", valueClick);
     dataBack.palette = parseInt(valueClick);
+    saveDates();
 }
 
 palettesOption.addEventListener("click", handlerPalette);
