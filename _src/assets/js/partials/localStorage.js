@@ -84,8 +84,6 @@ function printLocalStorage() {
   
   let valueTyp = saveData.typography - 1;
   let classTyp = typographiesValue[valueTyp];
-  console.log('classTyp', classTyp);
-  console.log ('valueTyp', valueTyp);
 
   function removeClassTyp(){
     for (let i=0; i<typographiesValue.length; i++){
