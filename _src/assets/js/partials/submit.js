@@ -26,5 +26,4 @@ function handlerSubmit() {
     .catch((error) => console.log(error))
 }
 
-
 submitEl.addEventListener('click', handlerSubmit);
