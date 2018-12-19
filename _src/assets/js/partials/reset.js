@@ -1,7 +1,7 @@
 const btnReset = document.querySelector(".button__reset");
 
 function handlerReset() {
-
+   let saveData = JSON.parse(localStorage.getItem("dataBackLocal")); //saveData es mi cadena ahora objeto
 
   let nameCard = document.querySelector(".userInfo__name"); //name
   const inputName = document.querySelector("#name");
