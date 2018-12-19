@@ -13,7 +13,7 @@ function printLocalStorage() {
   const allValuesDataBack = Object.values(dataBack);
   console.log('allValues', allValuesDataBack);
 
-  let dataBackReset = [ 1, 1, "", "", "","", "", "", "url(assets/images/silueta.jpg)", []];
+  let dataBackReset = [ 1,1, "", "", "","", "", "", "url(assets/images/silueta.jpg)", []];
   let acc =0;
     for (let i =0;i<dataBackReset.length;i++){
       dataBackReset[i]=allValuesDataBack[i];
