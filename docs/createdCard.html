@@ -18,8 +18,8 @@
     <body>
         <header class="header__container-designCard">
             <div class="header__position-card"> <a class="header__gonext" href="../index.html">
-            <img class="header__logo" src="assets/images/descarga.svg" alt="logo awesome profile-cards">
-        </a>
+      <img class="header__logo" src="assets/images/descarga.svg" alt="logo awesome profile-cards">
+    </a>
 
             </div>
         </header>
@@ -74,7 +74,7 @@
                              <h2 class="title-dropdown__title-design">Diseña</h2>
 
                         </div>
-                        <div class="title-dropdown__arrow arrowDesign"> <i class="arrowD fas fa-chevron-down"></i>
+                        <div class="title-dropdown__arrow arrowDesign"> <i class="arrowD fas fa-chevron-up"></i>
 
                         </div>
                     </div>
@@ -84,8 +84,8 @@
 
                             <form class="design-card__colors__select-palette">
                                 <label for="palette-green" class="palette">
-                                    <input class="radio" id="palette-green" type="radio" value="paletteGreen"
-                                    required checked name="selectPalete">
+                                    <input class="radio" id="palette-green" type="radio" data-palette="paletteGreen"
+                                    value="1" required name="selectPalete">
                                     <div class="colors-palette">
                                         <div class="colors-palette__item green1"></div>
                                         <div class="colors-palette__item green2"></div>
@@ -93,8 +93,8 @@
                                     </div>
                                 </label>
                                 <label for="palette-red" class="palette">
-                                    <input class="radio" id="palette-red" type="radio" value="paletteRed"
-                                    name="selectPalete">
+                                    <input class="radio palette2" id="palette-red" type="radio" data-palette="paletteRed"
+                                    value="2" name="selectPalete">
                                     <div class="colors-palette">
                                         <div class="colors-palette__item red1"></div>
                                         <div class="colors-palette__item red2"></div>
@@ -102,8 +102,8 @@
                                     </div>
                                 </label>
                                 <label for="palette-blue" class="palette">
-                                    <input class="radio" id="palette-blue" type="radio" value="paletteGrey"
-                                    name="selectPalete">
+                                    <input class="radio palette3" id="palette-blue" type="radio" data-palette="paletteGrey"
+                                    value="3" name="selectPalete">
                                     <div class="colors-palette">
                                         <div class="colors-palette__item blue1"></div>
                                         <div class="colors-palette__item blue2"></div>
@@ -111,8 +111,8 @@
                                     </div>
                                 </label>
                                 <label for="palette-purple" class="palette">
-                                    <input class="radio" id="palette-purple" type="radio" value="palettePurple"
-                                    name="selectPalete">
+                                    <input class="radio palette4" id="palette-purple" type="radio" data-palette="palettePurple"
+                                    value="4" name="selectPalete">
                                     <div class="colors-palette">
                                         <div class="colors-palette__item purple1"></div>
                                         <div class="colors-palette__item purple2"></div>
@@ -120,9 +120,9 @@
                                     </div>
                                 </label>
                                 <label for="palette-orange" class="palette">
-                                    <input class="radio" id="palette-orange" type="radio" value="paletteOrange"
-                                    name="selectPalete">
-                                    <div class="colors-palette">
+                                    <input class="radio" id="palette-orange" type="radio" data-palette="paletteOrange"
+                                    value="5" name="selectPalete">
+                                    <div class="colors-palette palette5">
                                         <div class="colors-palette__item orange1"></div>
                                         <div class="colors-palette__item orange2"></div>
                                         <div class="colors-palette__item orange3"></div>
@@ -135,27 +135,28 @@
 
                             <form class="design-Card__colors__select-font">
                                 <label for="font-Ubuntu" class="font">
-                                    <input class="radio" id="font-Ubuntu" type="radio" value="Ubuntu" required
-                                    name="selectFont">
+                                    <input class="radio fontradio typography1" id="font-Ubuntu" type="radio"
+                                    data-font="Ubuntu" value="1" required name="selectFont">
                                     <p class="font-Ubuntu">Ubuntu</p>
                                 </label>
-                                <label for="font-ComicSans" class="font">
-                                    <input class="radio" id="font-ComicSans" type="radio" value="ComicSans"
-                                    name="selectFont">
+                                <label for="font-ComicSans " class="font ">
+                                    <input class="radio fontradio typography2" id="font-ComicSans" type="radio"
+                                    data-font="ComicSans" value="2" name="selectFont">
                                     <p class="font-ComicSans">Comic Sans</p>
                                 </label>
-                                <label for="font-Montserrat" class="font">
-                                    <input class="radio" id="font-Montserrat" type="radio" value="Montserrat"
-                                    name="selectFont">
+                                <label for="font-Montserrat " class="font">
+                                    <input class="radio  fontradio typography3" id="font-Montserrat" type="radio"
+                                    data-font="Montserrat" value="3" name="selectFont">
                                     <p class="font-Monserrat">Monserrat</p>
                                 </label>
-                                <label for="font-Indie" class="font">
-                                    <input class="radio" id="font-Indie" type="radio" value="Indie" name="selectFont">
+                                <label for="font-Indie " class="font ">
+                                    <input class="radio fontradio typography4" id="font-Indie" type="radio"
+                                    value="Indie" name="selectFont">
                                     <p class="font-Indie">Indie</p>
                                 </label>
-                                <label for="font-Baskerville" class="font">
-                                    <input class="radio" id="font-Baskerville" type="radio" value="Baskerville"
-                                    name="selectFont">
+                                <label for="font-Baskerville " class="font">
+                                    <input class="radio  fontradio  typography5" id="font-Baskerville" type="radio"
+                                    value="Baskerville" name="selectFont">
                                     <p class="font-Baskerville">Baskerville</p>
                                 </label>
                             </form>
@@ -174,7 +175,7 @@
                         </div>
                     </div>
                     <!--FORM-->
-                    <form action="/signup" method="post" class="form  ">
+                    <form action="/signup" method="post" class="form hidden">
                         <label for="name" class="item-label">Nombre completo</label>
                         <input placeholder="Ej: Sally Jill" id="name" type="text"
                         name="name" class="item-input" required>
@@ -183,7 +184,7 @@
                         name="job" class="item-input" required>
                         <p class="item-label">Imágen de perfil</p>
                         <div class="container-image">
-                            <button class="image-link" type="button">Añadir imagen</button>
+                            <button class="image-link" type="submit">Añadir imagen</button>
                             <input type="file" name="" id="img-selector" class="action__hiddenField">
                             <div class="image-preview image-preview-small"></div>
                         </div>
@@ -194,10 +195,10 @@
                         <input placeholder="Ej: 555·55·55·55" pattern=[0-9]{9}
                         type="tel" id="phone" name="phone" class="item-input" required>
                         <label for="Linkedin" class="item-label">Linkedin</label>
-                        <input placeholder="Ej: linkedin.com/in/sally.hill" type="text"
-                        name="linkedin" id="linkedin" class="item-input" required>
+                        <input placeholder="Ej: sally-hill" type="text" name="linkedin"
+                        id="linkedin" class="item-input" required>
                         <label for="GitHub" class="item-label">GitHub</label>
-                        <input placeholder="Ej: @sally-hill" type="text" name="github"
+                        <input placeholder="Ej: sally-hill" type="text" name="github"
                         id="github" class="item-input" required>
                         <div class="container-skills">
                             <p class="text-skills">Habilidades (máximo 3)</p>
@@ -250,20 +251,21 @@
                             <div class="arrow-share-down"></div> <i class="arrowSa fas fa-chevron-down"></i>
 
                         </div>
-                        <div class="container-share">
+                        <div class="container-share hidden">
                             <button type="submit" class="button-create no-clicked"> <i class="far fa-address-card"></i>
 
                                 <p>Crear tarjeta</p>
-                            </button>
-                            <div class="container-hide-section">
+                            </button> <span class="loading"></span>
+
+                            <div class="container-hide-section hidden">
                                  <h3 class="text-hide-section">La tarjeta ha sido creada:</h3>
- <a class="link-profile-card" href="enlace a tarjeta">enlace a tarjeta, enlace a la tarjeta</a>
+ <a class="link-profile-card" href="enlace a tarjeta"></a>
+ <a class="share-twitter twitter-share-button"
+                                href="">
+          <i class="fab fa-twitter"></i>
+          <p class="share-twitter-text">Compartir en twitter</p>
+        </a>
 
-                                <button
-                                type="submit" class="share-twitter"> <i class="fab fa-twitter"></i>
-
-                                    <p class="share-twitter-text">Compartir en twitter</p>
-                                    </button>
                             </div>
                         </div>
                     </div>
@@ -272,9 +274,9 @@
         </main>
         <section class="footer__section">
             <p class="footer__text-reg">Awesome profile-cards &copy;2018</p> <a class="footer__conection" href="http://">
-        <div class="footer__conection-logo">
-        </div>
-    </a>
+    <div class="footer__conection-logo">
+    </div>
+  </a>
 
         </section>
         <script type="text/javascript" src="assets/js/main.js"></script>
