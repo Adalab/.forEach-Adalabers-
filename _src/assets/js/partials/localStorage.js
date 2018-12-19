@@ -7,8 +7,27 @@ function saveDates () {
 function printLocalStorage() {
 
   if (saveData) {
-    dataBack = saveData
+    dataBack = saveData;
   }
+
+  const allValuesDataBack = Object.values(dataBack);
+  console.log('allValues', allValuesDataBack);
+
+  let dataBackReset = [ 1, 1, "", "", "","", "", "", "url(assets/images/silueta.jpg)", []];
+  let acc =0;
+    for (let i =0;i<dataBackReset.length;i++){
+      dataBackReset[i]=allValuesDataBack[i];
+      console.log(dataBackReset[i]);
+      acc += 1;
+    }
+
+      console.log(acc);
+
+  if (acc===10){
+    handlerReset();
+  }else{
+
+  
 
   let nameCard = document.querySelector(".userInfo__name"); //name
   const inputName = document.querySelector("#name");
@@ -89,12 +108,14 @@ function printLocalStorage() {
     for (let i=0; i<typographiesValue.length; i++){
         boxFont.classList.remove(typographiesValue[i]);
     }
+    }
+
+  removeClassTyp();
+
+  boxFont.classList.add("userInfo");
+  boxFont.classList.add(classTyp);
+
 }
-
-removeClassTyp();
-
-boxFont.classList.add("userInfo");
-    boxFont.classList.add(classTyp);
 };
 
 

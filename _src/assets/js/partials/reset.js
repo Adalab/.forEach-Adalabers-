@@ -2,36 +2,42 @@ const btnReset = document.querySelector(".button__reset");
 
 function handlerReset() {
 
+  let saveData = JSON.parse(localStorage.getItem("dataBackLocal")); //saveData es mi cadena ahora objeto
 
   let nameCard = document.querySelector(".userInfo__name"); //name
   const inputName = document.querySelector("#name");
   inputName.value = "";
   nameCard.innerHTML = "Nombre Apellidos";
-  saveData.name = "";
+  dataBack.name = "";
+  saveDates();
 
   let jobCard = document.querySelector(".userInfo__job"); //job
   const inputJob = document.querySelector("#job");
   inputJob.value = "";
   jobCard.innerHTML = "Profesión";
-  saveData.job = "";
+  dataBack.job = "";
+  saveDates();
 
   const profileImgLs = document.querySelector('.image-preview__file'); //image
   const profileImgSmallLs = document.querySelector('.image-preview-small');
   profileImgLs.style.backgroundImage = `url(assets/images/silueta.jpg)`;
   profileImgSmallLs.style.backgroundImage = `url(assets/images/silueta.jpg)`;
-  saveData.photo = `url(assets/images/silueta.jpg)`;
+  dataBack.photo = `url(assets/images/silueta.jpg)`;
+  saveDates();
 
   let emailCard = document.querySelector(".email"); //mail
   const inputEmail = document.querySelector("#email");
   inputEmail.value = "";
   emailCard.href = ``;
-  saveData.email = "";
+  dataBack.email = "";
+  saveDates();
 
   let phoneCard = document.querySelector(".mobile"); //phone
   const inputPhone = document.querySelector("#phone");
   inputPhone.value = "";
   phoneCard.href = "";
-  saveData.phone = "";
+  dataBack.phone = "";
+  saveDates();
 
   let linkedinCard = document.querySelector(".linkedin"); //linkedin
   const inputLinkedin = document.querySelector("#linkedin");
@@ -43,7 +49,8 @@ function handlerReset() {
   const inputGithub = document.querySelector("#github");
   inputGithub.value = "";
   githubCard.href = ``;
-  saveData.github = "";
+  dataBack.github = "";
+  saveDates();
 
   const boxCard = document.querySelector("#box"); //palettes
   const palettesValue = [
@@ -61,7 +68,8 @@ function handlerReset() {
   }
   removeClassPal();
   boxCard.classList.add("box__card");
-  saveData.palette = 1;
+  dataBack.palette = 1;
+  saveDates();
 
   const boxFont = document.querySelector("#userInfo"); //typography
   const typographiesValue = [
@@ -80,14 +88,16 @@ function handlerReset() {
   };
   removeClassTyp();
   boxFont.classList.add("userInfo");
-  saveData.typography = 1;
+  dataBack.typography = 1;
+  saveDates();
 
   const allSkillsInputs = document.querySelectorAll(".checkbox-input"); //Skills
   for (let i = 0; i < allSkillsInputs.length; i++) { // iteration for each Skill
     if (allSkillsInputs[i].checked = true) {
       allSkillsInputs[i].checked = false;
     }
-    saveData.skills = [];
+    dataBack.skills = [];
+    saveDates();
   }
 
   cardListSkills.innerHTML = ``;
