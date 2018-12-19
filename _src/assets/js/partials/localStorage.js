@@ -8,7 +8,7 @@ function printLocalStorage() {
 
   if (saveData) {
     dataBack = saveData
-  };
+  }
 
   let nameCard = document.querySelector(".userInfo__name"); //name
   const inputName = document.querySelector("#name");
