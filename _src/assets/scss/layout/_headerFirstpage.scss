@@ -1,10 +1,11 @@
 .header__container {
+  height: 40vh;
   width: 100%;
   background-color: $white-three;
 }
 
 .header__position {
-  padding-top: 94px;
+  padding-top: 35%;
 }
 
 .header__firstGonext {
@@ -20,8 +21,9 @@
 }
 
 @media all and (min-width:768px) {
+
   .header__position {
-    padding-top: 348px;
+    padding-top: 25%;
   }
 
   .header__firstGonext {
@@ -32,5 +34,11 @@
     width: 420px;
     height: 110px;
     margin: auto;
+  }
+}
+
+@media all and (min-width:1200px){
+  .header__position {
+    padding-top: 13%;
   }
 }
