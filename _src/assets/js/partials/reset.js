@@ -7,14 +7,14 @@ function handlerReset() {
   let nameCard = document.querySelector(".userInfo__name"); //name
   const inputName = document.querySelector("#name");
   inputName.value = "";
-  nameCard.innerHTML = "Nombre Apellidos";
+  nameCard.innerHTML = "Nombre Apellido";
   dataBack.name = "";
   saveDates();
 
   let jobCard = document.querySelector(".userInfo__job"); //job
   const inputJob = document.querySelector("#job");
   inputJob.value = "";
-  jobCard.innerHTML = "Profesión";
+  jobCard.innerHTML = "Front-end developer";
   dataBack.job = "";
   saveDates();
 
