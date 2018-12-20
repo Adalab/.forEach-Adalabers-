@@ -28,3 +28,8 @@
         margin: auto;
     }
 }
+@media all and (min-width:1200px) {
+    .header__position{
+        padding-top: 50px;
+    }
+}
