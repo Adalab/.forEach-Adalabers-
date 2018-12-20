@@ -12,6 +12,7 @@
     grid-template-columns: 330px 1fr 1fr 1fr;
     padding: 20px 40px;
     background: linear-gradient(to bottom, $white-three, $white);
+    min-height: 77vh;
   }
 
   .section__card {
