@@ -30,7 +30,7 @@ function printLocalStorage() {
     }
   }
 
-  function fillCardJob(){
+  function fillCardJob() {
     let jobCard = document.querySelector(".userInfo__job"); //job
     const inputJob = document.querySelector("#job");
     let jobData = saveData.job;
@@ -42,7 +42,7 @@ function printLocalStorage() {
     }
   }
 
-  function fillCardImage(){
+  function fillCardImage() {
     const profileImgLs = document.querySelector('.image-preview__file'); //image
     const profileImgSmallLs = document.querySelector('.image-preview-small');
     let imageData = saveData.photo;
@@ -50,7 +50,7 @@ function printLocalStorage() {
     profileImgSmallLs.style.backgroundImage = `url(${imageData})`;
   }
 
-  function fillCardEmail(){
+  function fillCardEmail() {
     let emailCard = document.querySelector(".email"); //mail
     const inputEmail = document.querySelector("#email");
     let emailData = saveData.email;
@@ -58,7 +58,7 @@ function printLocalStorage() {
     emailCard.href = `mailto:${emailData}`;
   }
 
-  function fillCardPhone(){
+  function fillCardPhone() {
     let phoneCard = document.querySelector(".mobile"); //phone
     const inputPhone = document.querySelector("#phone");
     let phoneData = saveData.phone;
@@ -66,21 +66,23 @@ function printLocalStorage() {
     phoneCard.href = phoneData;
   }
 
-  function fillCardLinkedin(){
+  function fillCardLinkedin() {
     let linkedinCard = document.querySelector(".linkedin"); //linkedin
     const inputLinkedin = document.querySelector("#linkedin");
     let linkedinData = saveData.linkedin;
     inputLinkedin.value = linkedinData;
     linkedinCard.href = `https://linkedin.com/in/${linkedinData}`;
   }
-  function fillCardGithub(){
+
+  function fillCardGithub() {
     let githubCard = document.querySelector(".github"); //github
     const inputGithub = document.querySelector("#github");
     let githubData = saveData.github;
     inputGithub.value = githubData;
     githubCard.href = `https://github.com/${githubData}`;
   }
-  function manageCardPalette(){
+
+  function manageCardPalette() {
 
     const boxCard = document.querySelector("#box"); //palettes
     const palettesValue = [
@@ -103,6 +105,7 @@ function printLocalStorage() {
     boxCard.classList.add("box__card");
     boxCard.classList.add(classPal);
   }
+
   function manageCardTypography() {
     const boxFont = document.querySelector("#userInfo"); //typography
     const typographiesValue = [
@@ -128,7 +131,7 @@ function printLocalStorage() {
     boxFont.classList.add(classTyp);
   }
 
-  function fillCard(){
+  function fillCard() {
     fillCardName();
     fillCardJob();
     fillCardImage();
@@ -139,7 +142,7 @@ function printLocalStorage() {
     manageCardPalette();
     manageCardTypography();
   }
-  
+
   if (result === 9) {
     handlerReset();
   } else {
