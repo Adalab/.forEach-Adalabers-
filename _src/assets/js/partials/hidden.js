@@ -8,16 +8,12 @@ const arrowDesignElement = document.querySelector('.arrowD');
 const arrowFillElement = document.querySelector('.arrowF');
 const arrowShareElement = document.querySelector('.arrowSa');
 
-/* le paso a la función información del evento (event) y lo guardo en una constante currentClicked*/
 function handlerHidden(event) {
   const currentClicked = event.currentTarget; 
-  /* cualquier boton que pulse se guarda en currenClicked*/ 
-  /* ¿como se en que boton he clickado? tengo que hacer este condicional */
-
   if (currentClicked === buttonDesignElement){   
-/* si el boton que pulsé es el de diseña, le decimos que se oculte el bloque de paleta y letra*/
+
     designElement.classList.toggle('hidden');
-    // arrowDesignElement.classList.toggle('fa-chevron-down');
+    
     if(arrowDesignElement.classList.contains('fa-chevron-up')){
       arrowDesignElement.classList.remove('fa-chevron-up');
       arrowDesignElement.classList.add('fa-chevron-down');
@@ -29,25 +25,29 @@ function handlerHidden(event) {
     shareElement.classList.add('hidden');
 
   }else if (currentClicked === buttonFillElement){
-/*Sino si el boton que pulsé es el de fill, le decimos que se oculte ese bloque*/
-    fillElement.classList.toggle('hidden');
-    arrowFillElement.classList.toggle('fa-chevron-up');
-    shareElement.classList.add('hidden');
-    designElement.classList.add('hidden');
+    hiddenBlockElement (fillElement, shareElement, designElement, arrowFillElement);
+    // fillElement.classList.toggle('hidden');
+    // arrowFillElement.classList.toggle('fa-chevron-up');
+    // shareElement.classList.add('hidden');
+    // designElement.classList.add('hidden');
 
   } else {
-  /*Sino , le decimos que se oculte el bloque que queda, 
-  como ya no tenemos mas botones no hace falta por la condicion*/
-    shareElement.classList.toggle('hidden');
-    arrowShareElement.classList.toggle('fa-chevron-up');
-    designElement.classList.add('hidden');
-    fillElement.classList.add('hidden');
+    hiddenBlockElement (shareElement, designElement,fillElement, arrowShareElement);
+    // shareElement.classList.toggle('hidden');
+    // arrowShareElement.classList.toggle('fa-chevron-up');
+    // designElement.classList.add('hidden');
+    // fillElement.classList.add('hidden');
   }
 }
 
+function hiddenBlockElement (clickedBlock, firstHiddenBlock, secondHiddenBlock, arrow){
+  clickedBlock.classList.toggle('hidden');
+  firstHiddenBlock.classList.add('hidden');
+  secondHiddenBlock.classList.add('hidden');
+  arrow.classList.toggle('fa-chevron-up');
+}
+
 buttonDesignElement.addEventListener('click', handlerHidden);
-
 buttonFillElement.addEventListener('click', handlerHidden);
-
 buttonShareElement.addEventListener('click', handlerHidden);
 
