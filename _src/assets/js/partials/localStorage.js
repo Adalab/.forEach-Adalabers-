@@ -14,14 +14,11 @@ function printLocalStorage() {
 
   let dataBackReset = [1, 1, "", "", "", "", "", "", "url(assets/images/silueta.jpg)", []];
 
-  let acc = 0;
-  for (let i = 0; i < dataBackReset.length; i++) {
-    if (dataBackReset[i] === allValuesDataBack[i]) {
-      acc += 1;
-    }
-  }
+  const result = dataBackReset.reduce(
+    (acc) => acc + 1
+  );
 
-  if (acc === 9) {
+  if (result === 9) {
     handlerReset();
   } else {
 
@@ -32,8 +29,8 @@ function printLocalStorage() {
     if (nameData === "") {
       nameCard.innerHTML = "Nombre Apellido";
     } else {
-      nameCard.innerHTML = nameData
-    };
+      nameCard.innerHTML = nameData;
+    }
 
     let jobCard = document.querySelector(".userInfo__job"); //job
     const inputJob = document.querySelector("#job");
@@ -42,8 +39,8 @@ function printLocalStorage() {
     if (jobData === "") {
       jobCard.innerHTML = "Profesión";
     } else {
-      jobCard.innerHTML = jobData
-    };
+      jobCard.innerHTML = jobData;
+    }
 
 
     const profileImgLs = document.querySelector('.image-preview__file'); //image
