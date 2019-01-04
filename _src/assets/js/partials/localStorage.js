@@ -36,7 +36,7 @@ function printLocalStorage() {
     let jobData = saveData.job;
     inputJob.value = jobData;
     if (jobData === "") {
-      jobCard.innerHTML = "Profesión";
+      jobCard.innerHTML = "Front-end developer";
     } else {
       jobCard.innerHTML = jobData;
     }
@@ -96,12 +96,11 @@ function printLocalStorage() {
     let valuePal = saveData.palette - 1;
     let classPal = palettesValue[valuePal];
 
-    function removeClassPal() {
-      for (let i = 0; i < palettesValue.length; i++) {
-        boxCard.classList.remove(palettesValue[i]);
-      }
+
+    for (const value of palettesValue) {
+      boxCard.classList.remove(value);
     }
-    removeClassPal();
+
     boxCard.classList.add("box__card");
     boxCard.classList.add(classPal);
   }
@@ -119,13 +118,11 @@ function printLocalStorage() {
     let valueTyp = saveData.typography - 1;
     let classTyp = typographiesValue[valueTyp];
 
-    function removeClassTyp() {
-      for (let i = 0; i < typographiesValue.length; i++) {
-        boxFont.classList.remove(typographiesValue[i]);
-      }
+
+    for (const value of typographiesValue) {
+      boxFont.classList.remove(value);
     }
 
-    removeClassTyp();
 
     boxFont.classList.add("userInfo");
     boxFont.classList.add(classTyp);
