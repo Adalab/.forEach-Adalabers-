@@ -1,10 +1,18 @@
 'use strict';
 
-// JS for hidden (I think this page would be better in partial hidden but I do not know how to import it )
 
-//NAME
 const inputName = document.querySelector("#name");
 const nameCard = document.querySelector(".userInfo__name"); 
+const inputJob = document.querySelector("#job");
+const jobCard = document.querySelector(".userInfo__job");
+const inputEmail = document.querySelector("#email");
+const emailCard = document.querySelector(".email"); 
+const inputGithub = document.querySelector("#github");
+const GithubCard = document.querySelector(".github"); 
+const inputLinkedin = document.querySelector("#linkedin");
+const LinkedinCard = document.querySelector(".linkedin");
+const inputPhone = document.querySelector("#phone");
+const phoneCard = document.querySelector(".mobile"); 
 
 function handlerInputName (){
    
@@ -19,16 +27,7 @@ function handlerInputName (){
     };
 };
 
-inputName.addEventListener("keyup",handlerInputName); //when you write your name the Card Change
-inputName.addEventListener("blur",handlerInputName);// when you change the focus your name change (applicable after cutting and pasting)
-inputName.addEventListener("change",handlerInputName);
-inputName.addEventListener("keydown",handlerInputName);
-
-
-
-//JOB
-const inputJob = document.querySelector("#job");
-const jobCard = document.querySelector(".userInfo__job"); 
+inputName.addEventListener("keyup",handlerInputName); 
 
 function handlerInputJob (){
    
@@ -42,17 +41,7 @@ function handlerInputJob (){
     };
 };
 
-inputJob.addEventListener("keyup",handlerInputJob); //when you write your job the Card Change
-inputJob.addEventListener("blur",handlerInputJob);// when you change the focus your job change (applicable after cutting and pasting)
-inputJob.addEventListener("change",handlerInputJob);
-inputJob.addEventListener("keydown",handlerInputJob);
-
-
-
-//EMAIL
-
-const inputEmail = document.querySelector("#email");
-const emailCard = document.querySelector(".email"); 
+inputJob.addEventListener("keyup",handlerInputJob); 
 
 function handlerInputEmail (){
     let dataInput = inputEmail.value;
@@ -61,17 +50,7 @@ function handlerInputEmail (){
     saveDates ();
 };
 
-inputEmail.addEventListener("keyup",handlerInputEmail); //when you write your job the Card Change
-inputEmail.addEventListener("blur",handlerInputEmail);// when you change the focus your job change (applicable after cutting and pasting)
-inputEmail.addEventListener("change",handlerInputEmail);
-inputEmail.addEventListener("keydown",handlerInputEmail);
-
-
-
-//GITHUB
-
-const inputGithub = document.querySelector("#github");
-const GithubCard = document.querySelector(".github"); 
+inputEmail.addEventListener("keyup",handlerInputEmail); 
 
 function handlerInputGithub (){
     let dataInput = inputGithub.value;
@@ -81,17 +60,7 @@ function handlerInputGithub (){
     
 };
 
-inputGithub.addEventListener("keyup",handlerInputGithub); //when you write your job the Card Change
-inputGithub.addEventListener("blur",handlerInputGithub);// when you change the focus your job change (applicable after cutting and pasting)
-inputGithub.addEventListener("change",handlerInputGithub);
-inputGithub.addEventListener("keydown",handlerInputGithub);
-
-
-
-//LINKEDIN
-
-const inputLinkedin = document.querySelector("#linkedin");
-const LinkedinCard = document.querySelector(".linkedin"); 
+inputGithub.addEventListener("keyup",handlerInputGithub);  
 
 function handlerInputLinkedin(){
     let dataInput = inputLinkedin.value;
@@ -101,15 +70,7 @@ function handlerInputLinkedin(){
 
 };
 
-inputLinkedin.addEventListener("keyup",handlerInputLinkedin); //when you write your job the Card Change
-inputLinkedin.addEventListener("blur",handlerInputLinkedin);// when you change the focus your job change (applicable after cutting and pasting)
-inputLinkedin.addEventListener("change",handlerInputLinkedin);
-inputLinkedin.addEventListener("keydown",handlerInputLinkedin);
-
-
-//TELEPHONE
-const inputPhone = document.querySelector("#phone");
-const phoneCard = document.querySelector(".mobile"); 
+inputLinkedin.addEventListener("keyup",handlerInputLinkedin); 
 
 function handlerInputMobile (){
    
@@ -119,6 +80,13 @@ function handlerInputMobile (){
     saveDates ();
 
 };
+
+// function pickupElement (inputElement, elementLS, elementHtml){
+//     let dataInput = inputElement.value;
+
+//     dataBack.elementLS= dataInput;
+//     saveDates();
+// }
 
 inputPhone.addEventListener("keyup",handlerInputMobile);
 
