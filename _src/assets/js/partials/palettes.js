@@ -12,11 +12,15 @@ const palettes = {
 
 let AllPalettes = Object.values(palettes);
 
-function removeClass () {
-    for(let i=0;i<AllPalettes.length;i++){
-        boxCard.classList.remove(AllPalettes[i]);
-    }
-}
+const removeClass = palettes.map(palette => {
+    boxCard.classList.remove(palette);
+});
+
+// function removeClass () {
+//     for(let i=0;i<AllPalettes.length;i++){
+//         boxCard.classList.remove(AllPalettes[i]);
+//     }
+// }
 
 function handlerPalette(e) {
     let inputClick = e.target.getAttribute("data-palette"); // clave objeto
