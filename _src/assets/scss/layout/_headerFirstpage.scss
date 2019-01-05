@@ -1,5 +1,4 @@
 .header__container {
-  height: 40vh;
   width: 100%;
   background-color: $white-three;
 }
@@ -22,7 +21,7 @@
 
 @media all and (min-width:768px) {
   .header__position{
-    padding-top: 25%;
+    padding-top: 348px;
   }
   .header__firstGonext{
     width: 420px;
@@ -35,6 +34,6 @@
 }
 @media all and (min-width:1200px) {
   .header__position{
-    padding-top: 50px;
+    padding-top: 348px;
   }
 }
