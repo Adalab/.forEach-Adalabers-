@@ -105,4 +105,4 @@ function handlerReset() {
 
 
 
-btnReset.addEventListener("click", handlerReset)
+btnReset.addEventListener("click", handlerReset);
